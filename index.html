@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Eyad's website</title>
+  <title>Eyad Gad</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="description" content="Eyad Gad's Personal Website">
+  <meta name="keywords" content="AI, UWO, Eyad Gad, Personal Website, CS, research, html">
+  <meta name="author" content="Eyad Gad">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-<body>
 
+<!-- JavaScript -->
+<script>
+  function showDescriptionModal(title, description,paperlink) {
+    // Create the modal element
+    const modal = document.createElement('div');
+    modal.className = 'description-modal';
+
+    // Create the content for the modal
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <p><a href="https://${paperlink}" target="_blank">Paper Link</a></p>
+          </div>
+    `;
+    // Append the modal to the body
+    document.body.appendChild(modal);
+
+    // Close the modal when pressing "Esc"
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Close the modal when clicking outside the modal
+    modal.addEventListener('click', function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  function closeModal() {
+    // Remove the modal element from the DOM
+    const modal = document.querySelector('.description-modal');
+    if (modal) {
+      modal.parentNode.removeChild(modal);
+    }
+  }
+</script>
+
+
+<body>
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
@@ -39,7 +84,7 @@
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
+            <li><span>Research</span></li>
             <li><span>About</span></li>
             <li><span>Contact</span></li>
             <li><span>Connect</span></li>
@@ -49,24 +94,24 @@
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h2>Welcome!!<br></h2>
+                <h2>Hello!!<br></h2>
                 <!-- write small intro on me with different text and color -->
                 <h1>I'm Eyad Gad</h1> 
-                <p>AI Master's student at <a style="color: rgb(70, 30, 70)
+                <p>AI Master's student at <a style="color: rgb(114,32,117)
                 ; text-decoration: none;"href="https://www.zfadlullah.org/home">Dr. Fadlullah's Research Group</a></p>
-                <p>at <a style="color:rgb(70, 30, 70); text-decoration: none;"href="https://www.uwo.ca/">The University of Western Ontario</a>, London ON, Canada</p>
+                <p>at <a style="color:rgb(114,32,117); text-decoration: none;"href="https://www.uwo.ca/">The University of Western Ontario</a>, London ON, Canada</p>
 
-                <p>Former Jr. RA at <a style="color:rgb(70, 30, 70); text-decoration: none;"href="https://cis.nu.edu.eg/">Center for Informatics Science (CIS)</a></p>
-                <p>at <a style="color:rgb(70, 30, 70); text-decoration: none;"href="https://www.nu.edu.eg/">Nile University</a>, Cairo, Egypt</p>
+                <p>Recived my BSc. degree in Computer Engineering</p>
+                <p>at <a style="color:rgb(114,32,117); text-decoration: none;"href="https://www.nu.edu.eg/">Nile University</a>, Giza, Egypt</p>
 
 
                   <p>
                   <div class="social-media">             
                   <a href="mailto:egad@uwo.ca" class="fa fa-envelope"></a>
-                  <a href="https://linkedin.com/in/eyadgad" class="fa fa-linkedin"></a>
-                  <a href="https://github.com/eyadgad" class="fa fa-github"></a>
-                  <a href="https://scholar.google.com/citations?user=Vmjcp8gAAAAJ" class="fa fa-google"></a>
-                  <a href="https://drive.google.com/file/d/1Z3Z3QYIAAAAJ/view?usp=sharing" class="fa fa-file"></a>
+                  <a href="https://linkedin.com/in/eyadgad" class="fa fa-linkedin" target="_blank"></a>
+                  <a href="https://github.com/eyadgad" class="fa fa-github" target="_blank"></a>
+                  <a href="https://scholar.google.com/citations?user=Vmjcp8gAAAAJ" class="fa fa-google" target="_blank"></a>
+                  <a href="https://drive.google.com/file/d/1KFQx5tuvbUUxPQ6BX2r-uxMxd36KcYe2/view?usp=sharing" class="fa fa-file" target="_blank"></a>
                   <!--<a href="https://researchgate.net/profile/Eyad_Gad" class="fa fa-researchgate"></a> -->
                   <!--<a href="https://orcid.org/0000-0002-5734-7377" class="fa fa-id-card"></a>-->
                   </div>
@@ -104,46 +149,60 @@
           </li>
 
           <li class="l-section section">
-            
             <div class="work">
+
               <div class="Research">
-              
                 <h2 class="Research--title">Research</h2>
-                <h1 class="Research--description">My research interests include <br>Machine Learning, Deep Learning, <br>Reinforcement Learning, <br>and their applications in <br>Wireless Networks, <br>Internet of Things, <br>and Cyber-Physical Systems.</h1>
-
-
+                <p>My research interests include Machine Learning, Deep Learning, Federated Learning, 
+                  and their applications in </p>
+                  <ul>
+                    <li>Wireless Networks (current research)</li>
+                    <li>Internet of Things (IoT)</li>
+                    <li>Healthcare</li>
+                  </ul
               </div>
-              <h2>Selected work</h2>
+              <br><br><br><br><br><br>
+
+              <h2>Recent studies 
+                <a href="https://www.researchgate.net/profile/Eyad-Gad-2" target="_blank" style="color:rgb(114,32,117); text-decoration: none;">(view more)</a>
+              </h2>
               <div class="work--lockup">
                 <ul class="slider">
+
                   <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    <a href="#paper1" onclick="showDescriptionModal(
+                      'A Novel Diagnostic Model for Early Detection of Alzheimer’s Disease Based on Clinical and Neuroimaging Features',
+                      'In this research paper, the proposed algorithm is to optimize the performance of the prediction of early diagnosis from the multimodal dataset by a multi-step framework that uses a Deep Neural Network (DNN) as an optimization technique to extract features and train these features by Random Forest (RF) classifier. The results of the proposed algorithm showed that using only demographic and clinical data results in a balanced accuracy of 88% and an area under the curve (AUC) of 94.6. Ultimately, combining clinical and neuroimaging features, prediction results improved further to a balanced accuracy of 92% and an AUC of 97%.',
+                      'www.researchgate.net/publication/365582998_A_Novel_Diagnostic_Model_for_Early_Detection_of_Alzheimer\'s_Disease_Based_on_Clinical_and_Neuroimaging_Features')">
+                      <div class="slider--item-image"><img src="assets/img/ad.png" alt="AD"></div>
+                      <p class="slider--item-title"> <a href="http://dx.doi.org/10.1007/978-3-031-21595-7_3" target="_blank" style="color:rgb(114,32,117); text-decoration: none;">MEDI2022</a></p>
+                      <p class="slider--item-description">A Novel Diagnostic Model for Early Detection of Alzheimer’s Disease Based on Clinical and Neuroimaging Features</p>
                     </a>
                   </li>
+              
                   <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    <a href="#paper2" onclick="showDescriptionModal(
+                      'A Novel Approach to Breast Cancer Segmentation using U-Net Model with Attention Mechanisms and FedProx',
+                      'Breast cancer is a leading cause of death among women worldwide, emphasizing the need for early detection and accurate diagnosis. As such Ultrasound Imaging, a reliable and cost-effective tool, is used for this purpose, however the sensitive nature of medical data makes it challenging to develop accurate and private artificial intelligence models. A solution is Federated Learning as it is a promising technique for distributed machine learning on sensitive medical data while preserving patient privacy. However, training on non-Independent and non-Identically Distributed (non-IID) local datasets can impact the accuracy and generalization of the trained model, which is crucial for accurate tumour boundary delineation in BC segmentation. This study aims to tackle this challenge by applying the Federated Proximal (FedProx) method to non-IID Ultrasonic Breast Cancer Imaging datasets. Moreover, we focus on enhancing tumour segmentation accuracy by incorporating a modified U-Net model with attention mechanisms. Our approach resulted in a global model with 96% accuracy, demonstrating the effectiveness of our method in enhancing tumour segmentation accuracy while preserving patient privacy. Our findings suggest that FedProx has the potential to be a promising approach for training precise machine learning models on non-IID local medical datasets.',
+                      'www.researchgate.net/publication/365582998_A_Novel_Diagnostic_Model_for_Early_Detection_of_Alzheimer\'s_Disease_Based_on_Clinical_and_Neuroimaging_Features')">
+                      <div class="slider--item-image"><img src="assets/img/bc.jpg" alt="bc"></div>
+                      <p class="slider--item-title">MIUA2023 (to be puplished soon)</p>
+                      <p class="slider--item-description">A Novel Approach to Breast Cancer Segmentation using U-Net Model with Attention Mechanisms and FedProx</p>
                     </a>
                   </li>
+
                   <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    <a href="#paper3" onclick="showDescriptionModal(
+                      'Advancing Brain Tumor Segmentation via Attention-based 3D U-Net Architecture and Digital Image Processing',
+                      'Standard U-Net models encounter challenges in accurately delineating tumor regions, especially when dealing with irregular shapes and ambiguous boundaries. Additionally, training robust segmentation models on high-resolution MRI data, such as the BraTS datasets, necessitates high computational resources, and often faces challenges associated with class imbalance. This study proposes the integration of the attention mechanism into the 3D U-Net model, enabling the model to capture intricate details and prioritize informative regions during the segmentation process. Additionally, a tumor detection algorithm based on digital image processing techniques is utilized to address the issue of imbalanced training data and mitigate bias. This study aims to enhance the performance of brain tumor segmentation, ultimately improving the reliability of diagnosis. The proposed model is thoroughly evaluated and assessed on the BraTS 2020 dataset using various performance metrics to accomplish this goal. The obtained results indicate that the model outperformed related studies, exhibiting dice of 0.975, specificity of 0.988, and sensitivity of 0.995, indicating the efficacy of the proposed model in improving brain tumor segmentation, offering valuable insights for reliable diagnosis in clinical settings.',
+                      'www.researchgate.net/publication/365582998_A_Novel_Diagnostic_Model_for_Early_Detection_of_Alzheimer\'s_Disease_Based_on_Clinical_and_Neuroimaging_Features')">
+                      <div class="slider--item-image"><img src="assets/img/brats.png" alt="brats"></div>
+                      <p class="slider--item-title">MEDI2023 (to be puplished soon)</p> 
+                      <p class="slider--item-description">Advancing Brain Tumor Segmentation via Attention-based 3D U-Net Architecture and Digital Image Processing</p>
                     </a>
                   </li>
                 </ul>
+                
                 <div class="slider--prev">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
@@ -154,6 +213,7 @@
                   </g>
                   </svg>
                 </div>
+                
                 <div class="slider--next">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -162,8 +222,10 @@
                   </svg>
                 </div>
               </div>
+
             </div>
           </li>
+
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
@@ -301,7 +363,7 @@
   </div>
   <ul class="outer-nav">
     <li class="is-active">Home</li>
-    <li>Works</li>
+    <li>Research</li>
     <li>About</li>
     <li>Contact</li>
     <li>Connect</li>
