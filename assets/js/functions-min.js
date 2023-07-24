@@ -64,7 +64,7 @@ function showDescriptionModal(title, description,paperlink) {
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>${title}</h2>
                 <p>${description}</p>
-                <p><a href="https://${paperlink}" target="_blank">Explore more.....</a></p>
+                <p><a href="https://${paperlink}" style="color:rgb(255,255,255);"target="_blank">Explore more...</a></p>
                   </div>
               `;
             document.body.appendChild(modal);
