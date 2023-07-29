@@ -6,9 +6,9 @@
     height: 0.4vw;
     margin: -0.2vw 0 0 9.8vw;
     animation: ease 500s alternate infinite;
-    pointer-events: none;
+    pointer-events: none; 
   }
-  .firefly::before, .firefly::after {
+  .firefly::before, .firefly::after { /* this is the glow */
     content: "";
     position: absolute;
     width: 100%;
@@ -16,15 +16,10 @@
     border-radius: 50%;
     transform-origin: -10vw;
   }
-  .firefly::before {
-    background: black;
-    opacity: 0.4;
-    animation: drift ease alternate infinite;
-  }
-  .firefly::after {
-    background: white;
-    opacity: 0;
-    box-shadow: 0 0 0vw 0vw rgb(231, 11, 234);
+  .firefly::after { /* this is the flash */
+    background: rgb(168, 13, 174);
+    opacity: 1; 
+    box-shadow: 0 0 0vw 0vw rgb(114,32,117);
     animation: drift ease alternate infinite, flash ease infinite;
   }
   
