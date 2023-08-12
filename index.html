@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   
 </head>
 
@@ -362,6 +363,7 @@
             </div>
           </li> -->
 
+
           <li class="l-section section" id="connect">
             <header class="header">
               <a class="header--logo" href="#home" onclick="navigateToSection('home')"><img src="assets/img/logo.png"></a>
@@ -370,7 +372,7 @@
             <div class="hire">
               <h2>Get in touch</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request" onsubmit="sendEmail(); reset(); return false;">
+              <form class="work-request" onsubmit="sendEmail(); reset(); navigateToSection('home'); return false;">
                 <div class="work-request--information">
                   <div class="information-name">
                     <input id="first-name" type="text" spellcheck="false">
@@ -406,21 +408,29 @@
                 
               </form>
             </div>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            
             <script>
               function sendEmail() {
               Email.send({
-                Host: "smtp.gmail.com",
-                Username: "bratsproject@gmail.com",
-                Password: "szpyxkryfsmfzref",
-                To: "eyad.gad@outlook.com",
-                From: "bratsproject@gmail.com",
+                SecureToken : "ca50e35e-1226-4e05-b8f9-e4a157867869",
+                To : 'eyad.gad@outlook.com',
+                From : "eyademg1@gmail.com",
                 Subject: "New Message from Eyad Gad's Website",
                 Body: "Name: " + document.getElementById("first-name").value + " " + document.getElementById("last-name").value + "<br>" + "Email: " + document.getElementById("email").value + "<br>" + "Major: " + document.getElementById("major").value + "<br>" + "Interests: " + document.getElementById("interests").value + "<br>" + "Social Media: " + document.getElementById("social-media").value + "<br>" + "Message: " + document.getElementById("message").value
               }).then(message => alert("Your message has been sent successfully!")
               );}
+              function reset() {
+                document.getElementById("first-name").value = "";
+                document.getElementById("last-name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("major").value = "";
+                document.getElementById("interests").value = "";
+                document.getElementById("social-media").value = "";
+                document.getElementById("message").value = "";
+              }
             </script>
           </li>
+
 
         </ul>
       </div>
