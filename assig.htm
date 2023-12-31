@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assig_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="./assig_files/jquery.min.js.download"></script>
+    <script src="./assig_files/popper.min.js.download" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./assig_files/bootstrap.min.js.download" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./assig_files/css2" rel="stylesheet">
+    
+    <script type="text/javascript" src="./assig_files/smoothScroll.js.download"></script>
+    <script src="./assig_files/countdown.js.download" defer=""></script>
+    <link href="./assig_files/prism.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assig_files/styles.css">
+
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="container">
+        <div class="wrap">
+            <img src="./assig_files/uwo.png" alt="UWO" style="width: 450px; margin: 50px auto 0px;">
+
+         <div class="title">
+    <div class="titleBox">
+        <h2>
+            CS 1026 : Computer Science Fundamentals
+        </h2>
+        <br>
+        <img src="./assig_files/assig.png" alt="" srcset="" style="width: 800px;margin: auto;">
+        <br>
+        <div class="labNo">
+            Assignment 02        </div>
+
+        <div class="labNo2">
+            Library System        </div>
+        <br>
+        <div class="labCateg">
+
+        </div>
+        <div class="labName">
+            Due Date: <br>
+            Wednsday, October 25, 2023 23:55:00 ET
+            <br>
+            <br>
+            <div id="countdown" class="prpl" style="display: block;" data-duedate="October 25, 2023 23:55:59">EXPIRED</div>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <h2>Academic dishonesty</h2><br>
+
+            Assignments will be run through a similarity checking software to check for code that looks very similar to that of other students. Sharing or copying code in any way is considered plagiarism (<a style="color:yellow" target="_blank" href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/images/AcDishonesty.pdf">Academic dishonesty</a>) and may result in a mark of 0 on the assignment and/or reported to the Dean's Office. Plagiarism is a serious offence. Work is to be done <b>individually.</b>
+    </div>
+    <br>
+    <div class="menu">
+        <p>
+            </p><center>The following are the instructions for assignment 02:</center>
+        <p></p>
+        <ul>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#intro"><b>- </b> Introduction</a></li>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#1"><b>1 </b>Files</a></li>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#2"><b>2 </b>Tips and Guidelines</a></li>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#3"><b>3 </b>Rules</a></li>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#4"><b>4 </b>Marking Guidelines</a></li>
+            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#owl"><b>- </b>Assignment Submission</a></li>
+        </ul>
+    </div>
+</div>
+
+<section class="pale">
+    <br>
+    <p>
+        <i>If you want to store a PDF version of this assignment, press <a href="javascript:void(0)" onclick="window.print();"> <span class="badge badge-success">Ctrl+p</span> </a> on Windows or <a href="javascript:void(0)" onclick="window.print();"> <span class="badge badge-success">Command+p</span> </a> on Mac, the print window withh appear. Then, select <span class="badge badge-primary">Save As PDF</span> from the <b>Destination</b> dropdown. Then click <span class="badge badge-primary">Save</span> </i>
+    </p>
+</section>
+<br>
+<div class="alert alert-success" role="alert">
+<span style="font-size: 20px;padding: 12px;font-weight: 600;" class="badge badge-warning">this file was last modified on 2023-10-25 10:44:30 ET</span>            <br>
+            <br>
+    <h2><b>UPDATES and CHANGES</b> </h2>
+    The following are the updates/changes made to this assignment AFTER it was posted:
+    <br>
+    <dl>
+        <dt>Wednsday Oct 11, 1:23 PM ET</dt>
+        <dd><b>File name:</b> The file name should be <span class="badge badge-warning">library.py</span> all lower-case.
+        </dd>
+        <dt>Tuesdday Oct 17, 2:11 PM ET</dt>
+        <dd><b>Book edition check:</b> Checking if the book's edition is decimal is no longer required. The following sentence is removed from the instructions: <strike style="opacity: 0.6;">"If a decimal number is entered, the integer part is considered"</strike>.
+        </dd>  <dt>Tuesday Oct 19, 9:22 PM ET</dt>
+        <dd><b>Change variable name:</b> In the starter code the variable name is corrected from <strike style="opacity: 0.6;">rentedISBNs</strike> to <b>borrowedISBNs</b>.
+        </dd>
+        <dt>Tuesday Oct 24, 12:56 PM ET</dt>
+        <dd><b>Change in the error message of point 16:</b> In the <b>Return a book</b> section, the error message when incorrect ISBN is entered is corrected from <strike style="opacity: 0.6;">No book is found in the borrowed books list!</strike> to <b>No book is found!</b>.
+        </dd>
+    </dl>
+
+</div>
+<section>
+    <a name="intro"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">-</span>
+        <span class="exName">INTRODUCTION</span>
+    </h1>
+    <p class="whatToLearn">
+        In this assignment, you will get practice with:
+    </p><ul class="simpleList">
+        <li> Creating functions
+        </li>
+        <li> Calling functions and using return values
+        </li>
+        <li> Using a function from a separate Python file (multi-file program)
+        </li>
+        <li> User input in a loop
+        </li>
+        <li> Conditionals
+        </li>
+        <li> Lists and tuples
+        </li>
+        <li> String formatting for clean output
+        </li>
+        <li class="red"> You can use other techniques that will covered in the course later on. However, you are not allowed to use any external libraries. </li>
+
+    </ul>
+    <p></p>
+    <p>
+        In this assignment, you are asked to create a menu-driven program that is used for simple library system. You will be implementing some functionalities to add books to the library and borrow/return books.
+    </p>
+
+
+    <div class="alert alert-danger" role="alert">
+        <h2>Assignment Walkthrough!</h2><br>
+            To make it easier for you, please have a look at the video below. The video shows some tests that show the input/output sequence. More tests (demo runs) are shared at the end of the files section.
+    </div>
+
+    <video width="100%" controls="">
+        <source src="images/assig02/testcases.mp4" type="video/mp4">
+    </video>
+    <div class="alert alert-danger" role="alert">
+        <h2>Case sensitivity</h2><br>
+            In this assignment, ALL characters, messages, prompts, etc. are case in-sensitive.
+    </div>
+</section>
+<section>
+    <a name="1"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">1</span>
+        <span class="exName">FILES</span>
+    </h1>
+
+    <br>
+    <p class="whatToLearn">
+        For this assignment, you are asked to submit one file named <span class="badge badge-warning">library.py</span> (all lower-case) containing all the code required to complete this assignment.
+    </p><p>Your program should run according to the following specifications:</p>
+    <ol>
+        <li>
+            You are <b>must</b>  implement the function <span class="badge badge-success">start()</span> that takes no parameters and doesn't return anything. This function is the entry point for your program and must be invoked once. <br>
+            You are encouraged to modularize your code by separating it into multiple functions where each function is responsible to accomplish a specific task. The names, number of functions, and the breakdown is left up to you. You can use as many functions as you want 
+        </li>
+        <li>
+            Within the function <span class="badge badge-success">start()</span> you will build a menu that offers the user several options as follows:
+            <ul>
+                <li>
+                    1: (A)dd a new book.
+                </li>
+                <li>2: Bo(r)row books.
+                </li>
+                <li>3: Re(t)urn a book.
+                </li>
+                <li>4: (L)ist all books.
+                </li>
+                <li>5: E(x)it.</li>
+            </ul>
+            The user can select one option at a time by either typing the <b>number</b> of the option OR the <b>letter</b> enclosed by the brackets. The program neglects the case of the typed letter i.e., if the user types 3 or t or T, this means that "Return a book is selected". You can use the following code:
+            <pre class="line-numbers language-python" tabindex="0"><code class="language-python">
+<span class="token keyword">def</span> <span class="token function">printMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\n######################'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'1: (A)dd a new book.'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'2: Bo(r)row books.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'3: Re(t)urn a book.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'4: (L)ist all books.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'5: E(x)it.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'######################\n'</span><span class="token punctuation">)</span>
+
+</code></pre>
+            If the users enters an invalid option such as Y or 9, a warning message shows up "Wrong selection! Please selection a valid option." and the menu is dispayed again.
+        </li>
+
+        <div class="alert alert-danger" role="alert">
+            <h2>Calling Start( )</h2><br>
+                It is important that you call (invoke) the start() function when you submit your code. Failure to do so may result in failing all test cases.
+        </div><br>
+        <div class="alert alert-danger" role="alert">
+            <h2>Prompts and messages</h2><br>
+                Please refer to the shared test cases and the video walkthrough to determine the exact messages or prompt at each step. <b>You are asked to EXACTLY follow the wording and the puncuation used.</b> <br>
+                However, spaces are no big deal. Having extra space here or there is fine and you will not be penalized.
+        </div>
+
+        <h4><b>Add a new book</b></h4>
+        <li>
+            This option is selected when the user wants to add a new book to the available list of books. To add a new book you should ask the user to enter 4 peices of information:
+            <ul>
+                <li>Book name: A string. </li>
+                <li>Author: A string.</li>
+                <li>Edition: An integer.</li>
+                <li>International Standard Book Number (ISBN): A unique 13 digits number.</li>
+            </ul>
+        </li>
+        <li>The user is first asked to enter the book name. The book name may be of any length, any may have any characters <b>except the star * and the percent %</b> . If the user includes * or % in the book name, an error message is shown and the program <b>keeps asking the user</b> for a valid name. A while loop is a good fit for such task.</li>
+        <li>The user is then asked to enter the author name. No validation is required for this.</li>
+        <li>The user is then asked to enter the edition of the book. The book edition is an integer. <strike style="opacity: 0.3;">If a decimal number is entered, the integer part is considered</strike> . If the user enters a decimal point number or a non-numeric value (such as "a1" or "hi" or"3#") an error message is shown and the program keeps asking the user for a valid number.</li>
+        <li>The user is then asked to enter the ISBN of the book. The book ISBN is a 13-digit integer. If the user enters a non-numeric value (such as "asdf" or "123456789aaa") an error message is shown and the program keeps asking the user for a valid ISBN. <br><br>
+            Once a 13-digit is entered, the ISBN should be checked for validity. To check for a valid ISBN, use the steps below::
+            <ul>
+                <li>Multiply each digit of the ISBN from left to right by a specific weight factor: 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1.
+                </li>
+                <li>Sum the results of these multiplications.</li>
+                <li>If the sum of the multiplications is multiple of 10, then the ISBN is valid, otherwise is it invalid.</li>
+            </ul>
+            For example, if the ISBN is <b>9783161484109</b> then the sum of the multiplications = 9x1 + 7x3 + 8x1 + 3x3 + 1x1 + 6x3 + 1x1 + 4x3 + 8x1 + 4x3 + 1x1 + 0x3 + 9x1 = 109. This ISBN is invalid since 109 is not a multiple of 10.
+            <br>
+            The following is an example list of valid ISBNs. Note that this list should only be used for reference and testing purposes. Your code should be able to accept <b>any</b> valid ISBN (not limited to this list):
+            <pre class="line-numbers language-python" tabindex="0"><code class="language-python">
+validISBN13 <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">'9780132350884'</span><span class="token punctuation">,</span>
+                <span class="token string">'9780321125217'</span><span class="token punctuation">,</span>
+                <span class="token string">'9780596007126'</span><span class="token punctuation">,</span>
+                <span class="token string">'9780134494166'</span><span class="token punctuation">,</span>
+                <span class="token string">'9780321344755'</span><span class="token punctuation">,</span>
+                <span class="token string">'5456127314134'</span><span class="token punctuation">,</span> 
+                <span class="token string">'4785626132095'</span><span class="token punctuation">,</span> 
+                <span class="token string">'1469904958326'</span><span class="token punctuation">,</span> 
+                <span class="token string">'2867031788592'</span><span class="token punctuation">,</span> 
+                <span class="token string">'8156769968166'</span><span class="token punctuation">,</span> 
+                <span class="token string">'4072292173959'</span><span class="token punctuation">,</span> 
+                <span class="token string">'1142025111220'</span><span class="token punctuation">,</span> 
+                <span class="token string">'3282910143870'</span><span class="token punctuation">,</span> 
+                <span class="token string">'7937237868949'</span><span class="token punctuation">,</span> 
+                <span class="token string">'6395315943147'</span>
+              <span class="token punctuation">]</span>
+</code></pre>
+            If the 13-digit number is not a valid ISBN, this book entry is skipped and the program returns to the main menu (no repetitive checking is required)
+            <br>
+            Once the ISBN is validated, the entered value is compared against all ISBNs of the already available books. If the entered value is already found, this book entry is skipped and the program returns to the main menu (no repetetive checking is required). Otherwise, all book information is valid at this moment and this information will be stored in a list of books (let us call it <b>allBooks</b> ). The book information is stored in a list in the following order: <br>
+            <pre class="line-numbers language-python" tabindex="0"><code class="language-python">oneNewBook <span class="token operator">=</span> <span class="token punctuation">[</span>isbn<span class="token punctuation">,</span> bookName<span class="token punctuation">,</span> author<span class="token punctuation">,</span> edition<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+            the last empty list will be used to store the names of people who will borrow this book. It acts as the history of the previous borrowers of the book. More on this later. <br>
+
+            <div class="alert alert-danger" role="alert">
+                <h2>Initial books in the library</h2><br>
+                    Upon running your program, the library will not be empty. It should contain a number of books that is added automatically to the list of allBooks. The following books (exact information) are appended to the allBooks list before the menu is displayed to the user.
+            </div>
+            The list allBooks after adding several books at the start of the program looks like the following (please copy/paste):
+
+            <pre class="line-numbers language-python" tabindex="0"><code class="language-python">
+allBooks <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">[</span><span class="token string">'9780596007126'</span><span class="token punctuation">,</span><span class="token string">"The Earth Inside Out"</span><span class="token punctuation">,</span><span class="token string">"Mike B"</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'Ali'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token string">'9780134494166'</span><span class="token punctuation">,</span><span class="token string">"The Human Body"</span><span class="token punctuation">,</span><span class="token string">"Dave R"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token string">'9780321125217'</span><span class="token punctuation">,</span><span class="token string">"Human on Earth"</span><span class="token punctuation">,</span><span class="token string">"Jordan P"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'David'</span><span class="token punctuation">,</span><span class="token string">'b1'</span><span class="token punctuation">,</span><span class="token string">'user123'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+           <span class="token punctuation">]</span>
+</code></pre>
+
+            Here is an example of how the <b>Add a new book</b> works:
+            <div class="testCase">
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(r)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Hello 1026
+                Author name&gt; Kareem J
+                Edition&gt; 1
+                ISBN&gt; 9780321125217
+                A new book is added successfully.
+                </pre>
+            </div>
+        </li>
+
+
+        <h4><b>Borrow books</b></h4>
+        <li>A user select this option when someone wants to borrow book(s). </li>
+        <li>The user is first asked to enter the name of the borrower. No validation is required here.</li>
+        <li>The user is then asked to search for books using a search term. In this program, three search modes are available:
+            <ul>
+                <li><b>Contains:</b> If the user enters a term ending with a star <b>*</b> this means that the term may be found <b>anywhere</b> in the book name. For example, considering the allBooks list above, if the user enters <b>eart*</b> the two books "The Earth Inside Out" and "Human on Earth" are found. You can assume that the user will always enter a valid search term.</li>
+                <li><b>Starts with:</b> If the user enters a term ending with a percent <b>%</b> this means that the term may be found only at the <b>beginning</b> of the book name. For example, considering the allBooks list above, if the user enters <b>the%</b> the two books "The Earth Inside Out" and "The Human Body" are found. You can assume that the user will always enter a valid search term.</li>
+                <li><b>Exact:</b> If the user enters a term <b>without</b> any suffix this means that the term may be found only if the term <b>exactly matches</b> the book name. For example, considering the allBooks list above, if the user enters <b>HumAn ON earth</b> the books "Human on Earth" is found only.</li>
+            </ul>
+            If there is no matches to the search term, a warning message should be dispalyed the no books were found. Again, <b>everything here is case insensitive</b> .
+            <br>
+
+
+        </li>
+        <div class="alert alert-danger" role="alert">
+            <h2>Important!</h2><br>
+            Make sure that the search is <b>only applied to the available books</b>. This means that you exclude from the search results the books that are already borrowed at the moment of the search even if they match the search criteria.
+        </div>
+        <li>
+            Once the search is applied and a list of matching books are found, ALL the matching books will be borrowed under the name of the borrower. You need to append the borrower's name to the borrowers list (the empty list that we initially added as the 5<sup>th</sup> item of the book list). Note that this list holds the names of the previous borrowers (history) and the current borrower's name. If the book is being borrowed for the first time, the borrower name is appended to an empty list. The list accumulates names as the book is getting borrowed and returned over time.
+        </li>
+        <li>
+            In this assignment, we assume that this library has a single copy of each book. If the book is borrowed, then it will not be available until it is returned.
+        </li>
+        <li>You need to find a mechanism to track the books that are currently borrowed by someone. A list of ISBNs of the borrowed books (let us call it borrowedISBNs) may be a good idea. You are free to implement your own technique.</li>
+
+        <h4><b>Return a book</b></h4>
+        <li>This option is selected if the user wants to return a book. This means after a book is returned, this book becomes available and will appear in the next search results.</li>
+        <li>The user is first asked to enter the ISBN of the book to return. </li>
+        <li>The ISBN is compared with all ISBN numbers of the borrowed books (borrowedISBNs). If a match is found, this ISBN is simply removed from this list to make it available. Otherwise, a warning message should show "No book is found!", and the execution returns to the main menu. </li>
+
+
+        <h4><b>List all books</b></h4>
+        <li>This option is selected if the user wants to show all books in the system. Once selected, all books are displayed as the following EXACT formatting and order:
+            <div class="testCase">
+                <pre>        ---------------
+        [Available] or [Unavailable]
+        BookName - Author
+        E: Edition ISBN: ISBN-13
+        Borrowed by: [list of borrowers] 
+                </pre>
+            </div>
+
+            For example:
+            <div class="testCase">
+                <pre>        ---------------
+        [Available]
+        The Earth Inside Out - Mike B
+        E: 2 ISBN: 9780596007126
+        Borrowed by: ['Ali']
+        ---------------
+        [Available]
+        The Human Body - Dave R
+        E: 1 ISBN: 9780134494166
+        Borrowed by: []
+        ---------------
+        [Unavailable]
+        Human on Earth - Jordan P
+        E: 1 ISBN: 9780321125217
+        Borrowed by: ['David', 'b1', 'user123', 'Sam']  
+                </pre>
+            </div>
+        </li>
+        It prints nothing if the list is empty.
+
+        <h4><b>Exit</b></h4>
+        <li>This option is selected whenever the user wants to quit the program. When selected, the exact following message is displayed (<b> 8 dollar signs $$$$$$$$ from each side</b>):
+            <div class="prpl">$$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$</div>
+            And then all books are printed in the exact  format of the previous option <b>List all books</b>.
+            <div class="alert alert-danger" role="alert">
+                <h2>Important!</h2><br>
+                <ul>
+                    <li>Make sure to print this message exactly: $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$. Failing to do so will result in mark deduction.</li>
+                    <li>Make sure to implement this part carefully as a large portion of your marks will be based on this final list of books. </li>
+                </ul>
+            </div>
+        </li>
+
+
+    </ol>
+
+    <h3>Functional Specifications</h3>
+    <div class="alert alert-success" role="alert">
+        <h2><b>Coding Tip</b></h2>
+        It it <b>strongly recommended</b> that you modularize your code such that each menu item is handled by its own function and no global variables are used.
+    </div>
+    <p>As a starting point, you can copy the following starter code and fill the missing code (most of the code is missing).</p>
+    <pre class="line-numbers language-python" tabindex="0"><code class="language-python">
+<span class="token keyword">def</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    allBooks <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">[</span><span class="token string">'9780596007126'</span><span class="token punctuation">,</span><span class="token string">"The Earth Inside Out"</span><span class="token punctuation">,</span><span class="token string">"Mike B"</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'Ali'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token string">'9780134494166'</span><span class="token punctuation">,</span><span class="token string">"The Human Body"</span><span class="token punctuation">,</span><span class="token string">"Dave R"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token string">'9780321125217'</span><span class="token punctuation">,</span><span class="token string">"Human on Earth"</span><span class="token punctuation">,</span><span class="token string">"Jordan P"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'David'</span><span class="token punctuation">,</span><span class="token string">'b1'</span><span class="token punctuation">,</span><span class="token string">'user123'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+           <span class="token punctuation">]</span>
+    borrowedISBNs<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#       m  o  r  e     c  o  d  e</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#       m  o  r  e     c  o  d  e</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#</span>
+
+    
+<span class="token keyword">def</span> <span class="token function">printMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\n######################'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'1: (A)dd a new book.'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'2: Bo(r)row books.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'3: Re(t)urn a book.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'4: (L)ist all books.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'5: E(x)it.'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'######################\n'</span><span class="token punctuation">)</span> 
+
+<span class="token comment">#</span>
+<span class="token comment">#</span>
+<span class="token comment"># m o r e   f u n c t i o n s</span>
+<span class="token comment">#</span>
+<span class="token comment">#</span>
+<span class="token comment"># m o r e   f u n c t i o n s</span>
+<span class="token comment">#</span>
+
+
+
+<span class="token comment"># don't forget to invoke the start function</span>
+start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+    <p>Your program will execute as described above. The following are a few examples of the inputs and the expected outputs:</p>
+    <p>In the following examples this symbol <span class="crarr">↵</span> represents pressing the "Enter" key or "Return" key on your keyboard.</p>
+    <ol>
+        <li>
+            <b>Case 1:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b>
+            <p class="inputSeq">
+                
+                1<span class="crarr">↵</span>  Space Exploration<span class="crarr">↵</span> Neil A<span class="crarr">↵</span> 1<span class="crarr">↵</span> 9781234567890<span class="crarr">↵</span> space exploration<span class="crarr">↵</span> 1<span class="crarr">↵</span> Space Exploration<span class="crarr">↵</span> Neil A<span class="crarr">↵</span> 3<span class="crarr">↵</span> 13<span class="crarr">↵</span> 1233<span class="crarr">↵</span> 9780306406157<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> Space*<span class="crarr">↵</span> space<span class="crarr">↵</span> r<span class="crarr">↵</span> Alex<span class="crarr">↵</span> space*<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> John<span class="crarr">↵</span> space*<span class="crarr">↵</span> t<span class="crarr">↵</span> 978030640615723434<span class="crarr">↵</span> t<span class="crarr">↵</span> 9780306406157<span class="crarr">↵</span> r<span class="crarr">↵</span> David<span class="crarr">↵</span> %exploration<span class="crarr">↵</span> r<span class="crarr">↵</span> David<span class="crarr">↵</span> space%<span class="crarr">↵</span> l<span class="crarr">↵</span> 1<span class="crarr">↵</span> Atomic Habits<span class="crarr">↵</span> James Clear<span class="crarr">↵</span> 3<span class="crarr">↵</span> 978487941831<span class="crarr">↵</span> 9780596007126<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> David<span class="crarr">↵</span> 978059600712<span class="crarr">↵</span> r<span class="crarr">↵</span> David<span class="crarr">↵</span> the human body<span class="crarr">↵</span> list<span class="crarr">↵</span> l<span class="crarr">↵</span> exit<span class="crarr">↵</span> x<span class="crarr">↵</span>
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Space Exploration       
+                Author name&gt; Neil A
+                Edition&gt; 1
+                ISBN&gt; 9781234567890
+                Invalid ISBN!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; Space Exploration
+                Wrong selection! Please selection a valid option.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Space Exploration
+                Author name&gt; Neil A
+                Edition&gt; 3
+                ISBN&gt; 13
+                Invalid ISBN!
+                ISBN&gt; 1233
+                Invalid ISBN!
+                ISBN&gt; 9780306406157
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Space*
+                Search term&gt; Space
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Alex
+                Search term&gt; Space*           
+                -"Space Exploration" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: ['Alex']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; John
+                Search term&gt; space*
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; t
+                ISBN&gt; 978030640615723434
+                No book is found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; t
+                ISBN&gt; 9780306406157
+                "Space Exploration" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; David
+                Search term&gt; %Exploration
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; David
+                Search term&gt; space%
+                -"Space Exploration" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: ['Alex', 'David']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Atomic Habits
+                Author name&gt; James Clear 
+                Edition&gt; 3
+                ISBN&gt; 978487941831
+                Invalid ISBN!
+                ISBN&gt; 9780596007126   
+                Duplicate ISBN is found! Cannot add the book.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: ['Alex', 'David']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; David
+                Search term&gt; 978059600712 
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r   
+                Enter the borrower name&gt; David
+                Search term&gt; The Human Body
+                -"The Human Body" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; list
+                Wrong selection! Please selection a valid option.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['David']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: ['Alex', 'David']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; exit
+                Wrong selection! Please selection a valid option.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; x
+
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['David']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Space Exploration - Neil A
+                E: 3 ISBN: 9780306406157
+                borrowed by: ['Alex', 'David']
+                </pre>
+            </div>
+        </li>
+        <li>
+            <b>Case 2:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b>
+            <p class="inputSeq">
+                
+                a<span class="crarr">↵</span> Atomic$*<span class="crarr">↵</span> Atomic%<span class="crarr">↵</span> Atomic Habits<span class="crarr">↵</span> James Clear<span class="crarr">↵</span> 1<span class="crarr">↵</span> 234<span class="crarr">↵</span> 978013235088<span class="crarr">↵</span> 9780132350884<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> Alex<span class="crarr">↵</span> human*<span class="crarr">↵</span> l<span class="crarr">↵</span> t<span class="crarr">↵</span> 9780321125<span class="crarr">↵</span> 3<span class="crarr">↵</span> 9780321125217<span class="crarr">↵</span> l<span class="crarr">↵</span> 5<span class="crarr">↵</span>
+
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Atomic$*
+                Invalid book name!
+                Book name&gt; Atomic%
+                Invalid book name!
+                Book name&gt; Atomic Habits
+                Author name&gt; James Clear 
+                Edition&gt; 1
+                ISBN&gt; 234
+                Invalid ISBN!
+                ISBN&gt; 978013235088 
+                Invalid ISBN!
+                ISBN&gt; 9780132350884
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Alex
+                Search term&gt; Human*
+                -"The Human Body" is borrowed!
+                -"Human on Earth" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l   
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Alex']
+                ---------------
+                [Unavailable]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Alex']
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; t
+                ISBN&gt; 9780321125   
+                No book is found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 9780321125217
+                "Human on Earth" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Alex']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Alex']
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 5
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Alex']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Alex']
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 1 ISBN: 9780132350884
+                borrowed by: []     
+                </pre>
+            </div>
+        </li>
+
+        <li>
+            <b>Case 3:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b>
+            <p class="inputSeq">
+              
+                a<span class="crarr">↵</span> Mindset: The New Psychology of Success<span class="crarr">↵</span> Carol S. Dweck<span class="crarr">↵</span> 1<span class="crarr">↵</span> 9780134494166<span class="crarr">↵</span> a<span class="crarr">↵</span> Mindset: The New Psychology of Success<span class="crarr">↵</span> Carol S. Dweck<span class="crarr">↵</span> 4<span class="crarr">↵</span> 9780321344755<span class="crarr">↵</span> l<span class="crarr">↵</span> 2<span class="crarr">↵</span> David<span class="crarr">↵</span> psychology*<span class="crarr">↵</span> l<span class="crarr">↵</span> 2<span class="crarr">↵</span> Alex<span class="crarr">↵</span> psychology*<span class="crarr">↵</span> 2<span class="crarr">↵</span> Alex<span class="crarr">↵</span> mindset: the new psychology of success<span class="crarr">↵</span> r<span class="crarr">↵</span> Alex<span class="crarr">↵</span> human%<span class="crarr">↵</span> l<span class="crarr">↵</span> 5<span class="crarr">↵</span>
+
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Mindset: The New Psychology of Success
+                Author name&gt; Carol S. Dweck
+                Edition&gt; 1
+                ISBN&gt; 9780134494166
+                Duplicate ISBN is found! Cannot add the book.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Mindset: The New Psychology of Success
+                Author name&gt; Carol S. Dweck
+                Edition&gt; 4
+                ISBN&gt; 9780321344755
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Mindset: The New Psychology of Success - Carol S. Dweck
+                E: 4 ISBN: 9780321344755
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 2
+                Enter the borrower name&gt; David
+                Search term&gt; Psychology*
+                -"Mindset: The New Psychology of Success" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Mindset: The New Psychology of Success - Carol S. Dweck
+                E: 4 ISBN: 9780321344755
+                borrowed by: ['David']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 2
+                Enter the borrower name&gt; Alex
+                Search term&gt; Psychology*
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 2
+                Enter the borrower name&gt; Alex
+                Search term&gt; Mindset: The New Psychology of Success
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Alex
+                Search term&gt; Human%
+                -"Human on Earth" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Alex']
+                ---------------
+                [Unavailable]
+                Mindset: The New Psychology of Success - Carol S. Dweck
+                E: 4 ISBN: 9780321344755
+                borrowed by: ['David']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 5
+
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Alex']
+                ---------------
+                [Unavailable]
+                Mindset: The New Psychology of Success - Carol S. Dweck
+                E: 4 ISBN: 9780321344755
+                borrowed by: ['David']
+                </pre>
+            </div>
+        </li>
+        <li>
+            <b>Case 4:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b><br>
+            <p class="inputSeq">
+               
+                l<span class="crarr">↵</span> r<span class="crarr">↵</span> Mike<span class="crarr">↵</span> the human body - dave r<span class="crarr">↵</span> r<span class="crarr">↵</span> Mike<span class="crarr">↵</span> the human body<span class="crarr">↵</span> 3<span class="crarr">↵</span> 9780134494166<span class="crarr">↵</span> b<span class="crarr">↵</span> r<span class="crarr">↵</span> Dave<span class="crarr">↵</span> the earth inside out<span class="crarr">↵</span> r<span class="crarr">↵</span> Dave<span class="crarr">↵</span> human on earth<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> Dave<span class="crarr">↵</span> the human body<span class="crarr">↵</span> l<span class="crarr">↵</span> t<span class="crarr">↵</span> 9780596007126<span class="crarr">↵</span> 3<span class="crarr">↵</span> 9780134494166<span class="crarr">↵</span> 3<span class="crarr">↵</span> 9780321125217<span class="crarr">↵</span> l<span class="crarr">↵</span> 5<span class="crarr">↵</span>
+
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r 
+                Enter the borrower name&gt; Mike
+                Search term&gt; The Human Body - Dave R
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Mike
+                Search term&gt; The Human Body         
+                -"The Human Body" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 9780134494166
+                "The Human Body" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; b
+                Wrong selection! Please selection a valid option.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Dave
+                Search term&gt; The Earth Inside Out
+                -"The Earth Inside Out" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Dave
+                Search term&gt; Human on Earth      
+                -"Human on Earth" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Unavailable]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali', 'Dave']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Mike']
+                ---------------
+                [Unavailable]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Dave']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Dave
+                Search term&gt; The Human Body
+                -"The Human Body" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l 
+                ---------------
+                [Unavailable]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali', 'Dave']
+                ---------------
+                [Unavailable]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Mike', 'Dave']
+                ---------------
+                [Unavailable]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Dave']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; t
+                ISBN&gt; 9780596007126
+                "The Earth Inside Out" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 9780134494166
+                "The Human Body" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 9780321125217
+                "Human on Earth" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali', 'Dave']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Mike', 'Dave']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Dave']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 5
+
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali', 'Dave']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: ['Mike', 'Dave']
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123', 'Dave']
+                </pre>
+            </div>
+        </li>
+        <li>
+            <b>Case 5:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b><br>
+            <p class="inputSeq">
+                a<span class="crarr">↵</span> Drive: The Surprising Truth About What Motivates Us<span class="crarr">↵</span> Daniel H. Pink<span class="crarr">↵</span> 1<span class="crarr">↵</span> 9780132350884<span class="crarr">↵</span> a<span class="crarr">↵</span> Deep Work: Rules for Focused Success in a Distracted World<span class="crarr">↵</span> Cal Newport<span class="crarr">↵</span> 4<span class="crarr">↵</span> 9780321344755<span class="crarr">↵</span> a<span class="crarr">↵</span> Thinking, Fast and Slow<span class="crarr">↵</span> Daniel Kahneman<span class="crarr">↵</span> 1<span class="crarr">↵</span> 9780132350884<span class="crarr">↵</span> a<span class="crarr">↵</span> Thinking, Fast and Slow<span class="crarr">↵</span> Daniel Kahneman<span class="crarr">↵</span> 9780132350884<span class="crarr">↵</span> 9780132350884<span class="crarr">↵</span> l<span class="crarr">↵</span> 2<span class="crarr">↵</span> Mike<span class="crarr">↵</span> success*<span class="crarr">↵</span> l<span class="crarr">↵</span> 5<span class="crarr">↵</span>
+
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Drive: The Surprising Truth About What Motivates Us
+                Author name&gt; Daniel H. Pink
+                Edition&gt; 1
+                ISBN&gt; 9780132350884
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Deep Work: Rules for Focused Success in a Distracted World
+                Author name&gt; Cal Newport
+                Edition&gt; 4
+                ISBN&gt; 9780321344755
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Thinking, Fast and Slow
+                Author name&gt; Daniel Kahneman
+                Edition&gt; 1
+                ISBN&gt; 9780132350884
+                Duplicate ISBN is found! Cannot add the book.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Thinking, Fast and Slow
+                Author name&gt; Daniel Kahneman
+                Edition&gt; 9780132350884
+                ISBN&gt; 9780132350884
+                Duplicate ISBN is found! Cannot add the book.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Drive: The Surprising Truth About What Motivates Us - Daniel H. Pink
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+                ---------------
+                [Available]
+                Deep Work: Rules for Focused Success in a Distracted World - Cal Newport
+                E: 4 ISBN: 9780321344755
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 2
+                Enter the borrower name&gt; Mike
+                Search term&gt; Success*
+                -"Deep Work: Rules for Focused Success in a Distracted World" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Drive: The Surprising Truth About What Motivates Us - Daniel H. Pink
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Deep Work: Rules for Focused Success in a Distracted World - Cal Newport
+                E: 4 ISBN: 9780321344755
+                borrowed by: ['Mike']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 5
+
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Drive: The Surprising Truth About What Motivates Us - Daniel H. Pink
+                E: 1 ISBN: 9780132350884
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Deep Work: Rules for Focused Success in a Distracted World - Cal Newport
+                E: 4 ISBN: 9780321344755
+                borrowed by: ['Mike'] 
+                </pre>
+            </div>
+        </li>
+        <li>
+            <b>Case 6:</b>
+            <div class="testCase">
+                <b class="red">Input sequence: </b>
+            <p class="inputSeq">
+                1<span class="crarr">↵</span> Nudge: Improving Decisions About Health, Wealth, and Happiness<span class="crarr">↵</span> Richard H. Thaler and Cass R. Sunstein<span class="crarr">↵</span> 1<span class="crarr">↵</span> 9780321344755<span class="crarr">↵</span> 23<span class="crarr">↵</span> a<span class="crarr">↵</span> Thinking, Fast and Slow<span class="crarr">↵</span> Daniel Kahneman<span class="crarr">↵</span><span class="crarr">↵</span> 1<span class="crarr">↵</span> 9578531046824<span class="crarr">↵</span> 1<span class="crarr">↵</span> Grit: The Power of Passion and Perseverance<span class="crarr">↵</span> Angela Duckworth<span class="crarr">↵</span> 5<span class="crarr">↵</span> 234<span class="crarr">↵</span> 2896364582003<span class="crarr">↵</span> a<span class="crarr">↵</span> Atomic Habits*<span class="crarr">↵</span> Atomic%Habits<span class="crarr">↵</span> Atomic Habits<span class="crarr">↵</span> James Clear<span class="crarr">↵</span> 3<span class="crarr">↵</span> 8457594872483<span class="crarr">↵</span> a<span class="crarr">↵</span> Predictably Irrational: The Hidden Forces That Shape Our Decisions<span class="crarr">↵</span> Dan Ariely<span class="crarr">↵</span> 4<span class="crarr">↵</span> 9780134494166<span class="crarr">↵</span> a<span class="crarr">↵</span> Predictably Irrational: The Hidden Forces That Shape Our Decisions<span class="crarr">↵</span> Dan Ariely<span class="crarr">↵</span> 3<span class="crarr">↵</span> 5869782097395<span class="crarr">↵</span> l<span class="crarr">↵</span> r<span class="crarr">↵</span> Bryan<span class="crarr">↵</span> decision*<span class="crarr">↵</span> r<span class="crarr">↵</span> Alex<span class="crarr">↵</span> decision*<span class="crarr">↵</span> l<span class="crarr">↵</span> a<span class="crarr">↵</span> The Power of Habit<span class="crarr">↵</span> Charles Duhigg<span class="crarr">↵</span> 7<span class="crarr">↵</span> 23441*<span class="crarr">↵</span> 4251574781161<span class="crarr">↵</span> r<span class="crarr">↵</span> Mike<span class="crarr">↵</span> habit*<span class="crarr">↵</span> l<span class="crarr">↵</span> 3<span class="crarr">↵</span> 4251574781161<span class="crarr">↵</span> 3<span class="crarr">↵</span> 5869782097395<span class="crarr">↵</span> 3<span class="crarr">↵</span> sd.fjdf808<span class="crarr">↵</span> 5<span class="crarr">↵</span>
+
+            </p>
+            <b class="red">Output: </b>
+                <pre>                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Nudge: Improving Decisions About Health, Wealth, and Happiness
+                Author name&gt; Richard H. Thaler and Cass R. Sunstein
+                Edition&gt; 1
+                ISBN&gt; 9780321344755
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 23
+                Wrong selection! Please selection a valid option.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Thinking, Fast and Slow
+                Author name&gt; Daniel Kahneman,
+                Edition&gt; 1
+                ISBN&gt; 9578531046824
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 1
+                Book name&gt; Grit: The Power of Passion and Perseverance
+                Author name&gt; Angela Duckworth
+                Edition&gt; 5
+                ISBN&gt; 234
+                Invalid ISBN!
+                ISBN&gt; 2896364582003
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Atomic Habits*
+                Invalid book name!
+                Book name&gt; Atomic%Habits            
+                Invalid book name!
+                Book name&gt; Atomic Habits
+                Author name&gt; James Clear
+                Edition&gt; 3  
+                ISBN&gt; 8457594872483
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Predictably Irrational: The Hidden Forces That Shape Our Decisions
+                Author name&gt; Dan Ariely
+                Edition&gt; 4
+                ISBN&gt; 9780134494166
+                Duplicate ISBN is found! Cannot add the book.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; Predictably Irrational: The Hidden Forces That Shape Our Decisions
+                Author name&gt; Dan Ariely
+                Edition&gt; 3
+                ISBN&gt; 5869782097395
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Available]
+                Nudge: Improving Decisions About Health, Wealth, and Happiness - Richard H. Thaler and Cass R. Sunstein
+                E: 1 ISBN: 9780321344755
+                borrowed by: []
+                ---------------
+                [Available]
+                Thinking, Fast and Slow - Daniel Kahneman,
+                E: 1 ISBN: 9578531046824
+                borrowed by: []
+                ---------------
+                [Available]
+                Grit: The Power of Passion and Perseverance - Angela Duckworth
+                E: 5 ISBN: 2896364582003
+                borrowed by: []
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 3 ISBN: 8457594872483
+                borrowed by: []
+                ---------------
+                [Available]
+                Predictably Irrational: The Hidden Forces That Shape Our Decisions - Dan Ariely
+                E: 3 ISBN: 5869782097395
+                borrowed by: []
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Bryan
+                Search term&gt; Decision*
+                -"Nudge: Improving Decisions About Health, Wealth, and Happiness" is borrowed!
+                -"Predictably Irrational: The Hidden Forces That Shape Our Decisions" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Alex
+                Search term&gt; Decision*
+                No books found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Nudge: Improving Decisions About Health, Wealth, and Happiness - Richard H. Thaler and Cass R. Sunstein
+                E: 1 ISBN: 9780321344755
+                borrowed by: ['Bryan']
+                ---------------
+                [Available]
+                Thinking, Fast and Slow - Daniel Kahneman,
+                E: 1 ISBN: 9578531046824
+                borrowed by: []
+                ---------------
+                [Available]
+                Grit: The Power of Passion and Perseverance - Angela Duckworth
+                E: 5 ISBN: 2896364582003
+                borrowed by: []
+                ---------------
+                [Available]
+                Atomic Habits - James Clear
+                E: 3 ISBN: 8457594872483
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Predictably Irrational: The Hidden Forces That Shape Our Decisions - Dan Ariely
+                E: 3 ISBN: 5869782097395
+                borrowed by: ['Bryan']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; a
+                Book name&gt; The Power of Habit
+                Author name&gt; Charles Duhigg
+                Edition&gt; 7
+                ISBN&gt; 23441*
+                Invalid ISBN!
+                ISBN&gt; 4251574781161
+                A new book is added successfully.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; r
+                Enter the borrower name&gt; Mike
+                Search term&gt; hAbIt*
+                -"Atomic Habits" is borrowed!
+                -"The Power of Habit" is borrowed!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; l
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Nudge: Improving Decisions About Health, Wealth, and Happiness - Richard H. Thaler and Cass R. Sunstein
+                E: 1 ISBN: 9780321344755
+                borrowed by: ['Bryan']
+                ---------------
+                [Available]
+                Thinking, Fast and Slow - Daniel Kahneman,
+                E: 1 ISBN: 9578531046824
+                borrowed by: []
+                ---------------
+                [Available]
+                Grit: The Power of Passion and Perseverance - Angela Duckworth
+                E: 5 ISBN: 2896364582003
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Atomic Habits - James Clear
+                E: 3 ISBN: 8457594872483
+                borrowed by: ['Mike']
+                ---------------
+                [Unavailable]
+                Predictably Irrational: The Hidden Forces That Shape Our Decisions - Dan Ariely
+                E: 3 ISBN: 5869782097395
+                borrowed by: ['Bryan']
+                ---------------
+                [Unavailable]
+                The Power of Habit - Charles Duhigg
+                E: 7 ISBN: 4251574781161
+                borrowed by: ['Mike']
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 4251574781161
+                "The Power of Habit" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; 5869782097395
+                "Predictably Irrational: The Hidden Forces That Shape Our Decisions" is returned.
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 3
+                ISBN&gt; sd.fjdf808
+                No book is found!
+
+                ######################
+                1: (A)dd a new book.
+                2: Bo(R)row books.
+                3: Re(t)urn a book.
+                4: (L)ist all books.
+                5: E(x)it.
+                ######################
+
+                Your selection&gt; 5
+
+
+
+                $$$$$$$$ FINAL LIST OF BOOKS $$$$$$$$
+                ---------------
+                [Available]
+                The Earth Inside Out - Mike B
+                E: 2 ISBN: 9780596007126
+                borrowed by: ['Ali']
+                ---------------
+                [Available]
+                The Human Body - Dave R
+                E: 1 ISBN: 9780134494166
+                borrowed by: []
+                ---------------
+                [Available]
+                Human on Earth - Jordan P
+                E: 1 ISBN: 9780321125217
+                borrowed by: ['David', 'b1', 'user123']
+                ---------------
+                [Unavailable]
+                Nudge: Improving Decisions About Health, Wealth, and Happiness - Richard H. Thaler and Cass R. Sunstein
+                E: 1 ISBN: 9780321344755
+                borrowed by: ['Bryan']
+                ---------------
+                [Available]
+                Thinking, Fast and Slow - Daniel Kahneman,
+                E: 1 ISBN: 9578531046824
+                borrowed by: []
+                ---------------
+                [Available]
+                Grit: The Power of Passion and Perseverance - Angela Duckworth
+                E: 5 ISBN: 2896364582003
+                borrowed by: []
+                ---------------
+                [Unavailable]
+                Atomic Habits - James Clear
+                E: 3 ISBN: 8457594872483
+                borrowed by: ['Mike']
+                ---------------
+                [Available]
+                Predictably Irrational: The Hidden Forces That Shape Our Decisions - Dan Ariely
+                E: 3 ISBN: 5869782097395
+                borrowed by: ['Bryan']
+                ---------------
+                [Available]
+                The Power of Habit - Charles Duhigg
+                E: 7 ISBN: 4251574781161
+                borrowed by: ['Mike']   
+                </pre>
+            </div>
+        </li>
+
+    </ol>
+
+
+
+
+
+
+
+    <h3>Non-Functional Specifications</h3>
+    <ul>
+        <li>
+            The program should strictly adhere to the input and output requirements, particularly the order of the input and the labelling of the output cost.
+        </li>
+        <li>The program should include brief comments in your code identifying yourself, describing the program, and describing key portions of the code.
+        </li>
+        <li>You should be bothered with writing meaningful code comments to help others, including the grading team, understand your code. A code comment that describes:
+            <ul>
+                <li> Identifying yourself
+                </li>
+                <li>Describe the program and the reasoning behind it
+                </li>
+                <li>Its input(s) and output(s)
+                </li>
+                <li>Describing key portions of the code
+                </li>
+            </ul>
+        </li>
+
+        <li> It is up to you how to comment your code. 
+            <br>
+            One line for the entire program is under-commenting. For example:
+                <img src="./assig_files/LessComments.png" alt="">
+                <br>
+                
+                And commenting each and every line is over-commenting. For example:
+                <img src="./assig_files/MoreComments.png" alt="">
+<br>
+Somthing average is good. An example of a good comment practice:
+            <img src="./assig_files/GoodComments.png" alt="">
+           
+        </li>
+        <li>Assignments must be done individually and must be your work. Software may be used to detect academic dishonesty (cheating). <a target="_blank" href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/images/AcDishonesty.pdf">Academic dishonesty</a> cases will not be tolerated and will be reported to the department to proceed with the proper actions.
+        </li>
+        <li>Use Python coding conventions and sound programming techniques. For example:
+            <ul>
+                <li> Meaningful variable names
+                </li>
+                <li>Conventions for naming variables and constants. You are not required to use a specific naming convention, however, you pick a convention and be consistent. You can use <b>any</b> of the following:
+                    <ul>
+                        <li><b>Snake Case:</b>Snake case is a widely used naming convention in Python where words in variable and function names are separated by underscores. This convention is easy to read and is recommended by PEP 8.
+                            <br>
+                            Example: user_name, calculate_average(), get_max_value_in_the_list().
+                        </li>
+                        <li><b>Camel case:</b> Camel case is typically used for naming classes in Python. In camel case, the first letter of each word is capitalized, and there are no spaces or underscores between words. This convention is relatively faster to write.
+                            <br>
+                            Example: MyClass, CarModel, calculateAverage(), getMarksAfterAdding2PercentPenalty().
+                        </li>
+                    </ul>
+                </li>
+                <li>Use of constants where appropriate
+                </li>
+                <li>Readability, indentation, and consistency
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <div class="alert alert-danger" role="alert">
+        <h2>Remember!</h2><br>
+            Make sure you develop your code with Python 3.9 or higher as the interpreter. Failure to do so may result in the testing program failing.
+    </div>
+</section>
+
+<section>
+    <a name="2"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">2</span>
+        <span class="exName">TIPS AND GUIDELINES</span>
+    </h1>
+    <ul>
+        <li>
+            Make sure to use the exact wording of the messages prompted to the user. You can copy/paste it for your convenience.</li>
+        <li>Include all the puncuations as demonstrated in the examples. A dash - is different from underscore _ and so on. This is because marking will be very sensitive to formatting. </li>
+    </ul>
+
+    <b>Testing Your Program </b>
+    <br>
+    Wondering how to verify the effectiveness of your solution? Developing a set of test cases can assist in checking the thoroughness and precision of your code. While the abovementioned examples are not exhaustive, they will aid in this pursuit. However, please note that the success of these test cases does not guarantee the complete correctness and completeness of your code. It is important to consider additional test cases that will further confirm the completeness and accuracy of your provided solution.
+
+</section>
+<section>
+    <a name="3"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">3</span>
+        <span class="exName">RULES</span>
+    </h1>
+    <ul>
+        <li>Read and follow the instructions carefully.
+        </li>
+        <li>Only submit the Python file described in the Files section of this document.
+        </li>
+        <li>Submit the assignment on time. Late submissions will receive zero unless you have enough coupons to be applied (automatically).
+        </li>
+        <li>Forgetting to submit a finished assignment is not a valid excuse for submitting late.
+        </li>
+        <li>The file name and extension must be followed as described.</li>
+        <li>Submissions must be done on Gradescope. They will not be accepted by email.
+        </li>
+        <li>You may re-submit your code as many times as you would like. Gradescope uses your last submission as the one for grading by default. There are no penalties for re-submitting. However, re-submissions that come in after the due date will be considered late and subject to penalties.
+        </li>
+        <li>Again, assignments will be run through a similarity checking software to check for code that looks very similar to that of other students. Sharing or copying code in any way is considered plagiarism (Academic dishonesty) and may result in a mark of 0 on the assignment and/or reported to the Dean's Office. Plagiarism is a serious offence. Work is to be done individually. </li>
+    </ul>
+</section>
+<section>
+    <a name="4"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">4</span>
+        <span class="exName">MARKING GUIDELINES</span>
+    </h1>
+    <p>The assignment may be marked as a combination of your auto-graded tests and manual grading of your code logic, comments, formatting, style, etc. Below is a breakdown of the marks for this assignment:</p>
+    <ul>
+        <li><b>[50 marks] </b> Testing your code for correctness and adherence to the specifications by producing the expected output
+        </li>
+        <li><b> [20 marks] </b> Code logic and completeness
+        </li>
+        <li><b> [10 marks] </b> Comments
+        </li>
+        <li><b> [10 marks] </b> Code formatting
+        </li>
+        <li><b> [10 marks]</b> Meaningful and properly formatted variables
+        </li>
+        <li>
+            <b>Total: 100 marks</b>
+        </li>
+    </ul>
+    <div class="alert alert-danger" role="alert">
+        <h2>Remember!</h2><br>
+            The weight of this assignment is <b> 8%</b> of the course mark.
+    </div>
+</section>
+
+<section>
+    <a name="owl"></a>
+    <!----------############################--------->
+    <!----------############################--------->
+    <h1>
+        <span class="exNo">- </span>
+        <span class="exName">GRADESCOPE SUBMISSION </span>
+    </h1>
+    <ol>
+        <li> You must submit the 1 files to the Assignment 1 submission page on Gradescope. The required file is <span class="badge badge-success">library.py</span>.
+        </li>
+        <li>.html , .ipynb, and all other file extensions will not be accepted under any circumstances and it will result in failing ALL test.</li>
+        <li>The submission will be using <a href="https://www.gradescope.ca/courses/11404" target="_blank" rel="noopener noreferrer">Gradescope</a>. <br>
+            <b>
+                You can find the instruction on how to complete your submission by following the steps in this video:</b> <br>
+
+            <video width="100%" controls="">
+                <source src="gs.mp4" type="video/mp4">
+            </video>
+        </li>
+    </ol>
+
+
+    <div class="alert alert-danger" role="alert">
+        <h2>Remember!</h2><br>
+            <ul>
+                <li>You have 4 coupons (for the entire semester) that will be automatically applied when you submit late.</li>
+                <li>It is the student's responsibility to ensure the work was submitted and posted in GradeScope. </li>
+                <li>
+                    Any assignment not submitted correctly will not be graded. </li>
+                <li>Submissions through the email will not be accepted at any circumstances.</li>
+                <li>Please check this page back whenever an announcement is posted regarding this assignment.</li>
+                <li>ONLY the 1 mentioned file <span class="badge badge-success">library.py</span> is to be submitted. </li>
+                <li> Do NOT submit any of the other files or folders. </li>
+                <li>Marks will be deducted if you submit anything other than <span class="badge badge-success">library.py</span>. </li>
+            </ul>
+
+    </div>
+
+
+</section>
+    <a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=02#top" class="top">TOP</a>
+    <script src="./assig_files/clipboard.min.js.download"></script>
+    <script src="./assig_files/prism.js.download"></script>
+    <script src="./assig_files/myscript.js.download"></script>
+    </div>
+    </div>
+    
+
+    <div class="betternet-wrapper"><template shadowrootmode="open">
+        
+      <style>
+        .betternet_content_clean * {}
+      </style>
+      <style>@import url("chrome-extension://gjknjjomckknofjidppipffbpoekiipm/content/styles.css");</style>
+      <div id="betternet_content_root" class="betternet_content_clean"><div class="betternet_content"></div></div>
+    </template></div></body></html>
