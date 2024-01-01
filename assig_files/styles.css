@@ -43,11 +43,16 @@ h1>.exName {
     letter-spacing: 4px;
     font-weight: 700;
 }
+h2 {
+     
+    color: #73038f;
+    font-weight: 550;
+}
 
 h3 {
-    background: #1aa6b7;
-    padding: 10px;
-    margin: 70px -50px 30px -50px;
+    background: #73038f;
+    padding: 5px;
+    margin: 70px -50px 30px -50px; 
     color: #fff;
     text-align: center;
 }
@@ -57,7 +62,7 @@ h4{
     padding: 5px 20px;
     border-radius: 10px;
 }
-}
+
 p {
     font-size: 18px;
 }
