@@ -9,6 +9,36 @@ body {
     background-size: contain;
 }
 
+table {
+    width: 100%;
+    font-size: x-small;
+    border-collapse: collapse;
+     /*margin: x =0 , y = 0 x1 = 100, y1 = 100 */
+    margin: 0 0 10px 100px;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 11px;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 1px;
+    width: 500px;
+    font-size: 20px;
+    font-family: 'Titillium Web',"Ubuntu", "Dosis", Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 0.2em;
+    font-weight: 500;
+}
+th {/*table header*/
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) { /*table row*/
+    background-color: #f2f2f2;
+
+}
+
 b {
     font-weight: 600;
 }
