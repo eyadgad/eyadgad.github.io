@@ -190,19 +190,19 @@
         <b>course name</b>, and associated <b>grades</b>. 
         The student's name and course name are strings,
         while the grades are represented as a tuple containing coursework and final exam scores,
-        with their total not exceeding 100. <br>For example, a record might look like ['Sara', 'English', (60, 40)],
+        with their total not exceeding 100.
+        <br>For example, in the input of test case 1, a record might look like ['Sara', 'English', (60, 40)],
         indicating Sara got full marks in both coursework and the final exam for the English course.
         As students may enroll in multiple courses, their names could appear multiple times in the records.
-        For example, if Sara also takes a French course and receives grades (35, 38),there would be two records for Sara. 
+        In the same example, if Sara also takes a French course and receives grades (35, 38),there would be two records for Sara. 
     </p>
     <p>
         Vecna wants to transform these records and add them into a new list where each element is a list
         represents a unique student along with their enrolled courses and corresponding grades. 
-        For example, Sara's transformed record would be ['Sara', ['English', 'French'], [(60, 40), (35, 38)]].
-        In this format, the first element is the student's name, the second element lists the courses taken,
-        and the third element contains tuples representing the grades for each respective course.
+        For example, in the output of test case 1, Sara's transformed record would be ['Sara', ['English', 'French'], [(60, 40), (35, 38)]].
+        In this format, the first element is the student's name, the second element is a list of the courses taken,
+        and the third element is list of tuples representing the grades for each respective course.
     </p>  
-    <br>
 
     <h2>Notes</h2>
     <ul>
@@ -214,7 +214,8 @@
         A single integer number representing the number of records in the list.
     </li>
     <li>
-        Multiple lines, each line contains a single list representing single record.
+        Multiple lines, each line contains student's name, course name, and associated grades separated by two commas.
+    
     </li>
     <H2>Standard Output</H2>
     <li>
@@ -224,7 +225,7 @@
     <H3>Test Case 1</H3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    2<span class="crarr">&crarr;</span>['Sara','English',(60, 40)]<span class="crarr">&crarr;</span>['Sara','French',(35, 38)]<span class="crarr">&crarr;</span>
+    2<span class="crarr">&crarr;</span>Sara,,English,,(60,40)<span class="crarr">&crarr;</span>Sara,,French,,(35,38)<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
@@ -233,11 +234,11 @@
     <H3>Test Case 2</H3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-      5<span class="crarr">&crarr;</span>['Sara','English',(60,40)]<span class="crarr">&crarr;</span>['Dan','Math',(54,30)]<span class="crarr">&crarr;</span>['Sara','Physics',(52,20)]<span class="crarr">&crarr;</span>['Dan','English',(50,39)]<span class="crarr">&crarr;</span>['Jane','French',(56,34)]<span class="crarr">&crarr;</span>
+    5<span class="crarr">&crarr;</span>Mike,,English,,(60,40)<span class="crarr">&crarr;</span>Dan,,Math,,(54,30)<span class="crarr">&crarr;</span>Jane,,French,,(56,34)<span class="crarr">&crarr;</span>Mike,,Physics,,(52,20)<span class="crarr">&crarr;</span>Dan,,English,,(50,39)<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            ['Sara', ['English','Physics'], [(60,40),(52,20)]]
+            ['Mike', ['English','Physics'], [(60,40),(52,20)]]
             ['Dan', ['Math','English'], [(54,30),(50,39)]]
             ['Jane', ['French'], [(56,34)]]</pre>
     <br>
@@ -265,8 +266,7 @@
     <p>
         Vecna now wishes to enhance the grade management system
         by incorporating a feature to calculate the overall GPA
-        for each student based on the transformed records where
-        each record represents a unique student along with their
+        for students based on their records. A record represents a unique student along with their
         courses and corresponding grades. The overall GPA is 
         calculated using a specific grading scale where each 
         grade corresponds to a Grade Point (GP) value. The GP 
@@ -288,40 +288,38 @@
         <tr><td>1.0</td><td>54 - 50</td></tr>
         <tr><td>0.0</td><td>Below 50</td></tr>
     </table>
-    
-    
-    
     <p>
-        Vecna wants to transform this list of records into a new formatted list where each element is a list
-        represents a unique student along with their enrolled courses and corresponding grades. 
-        For example, Sara's consolidated record would be ['Sara', ['English', 'French'], [(60, 40), (35, 38)]].
-        In this format, the first element is the student's name, the second element lists the courses taken,
-        and the third element contains tuples representing the grades for each respective course.
-    </p>  
+        The overall GPA for each course is calculated by mapping
+        its final grades to the corresponding GP value from the table 
+        and then averaging the GP values of all enrolled courses for each student.
+        To illustrate, considering the example in test case 1 where Jane
+        has final grades of 90 in French and final grades of 85 in Math, the 
+        corresponding GP values are 3.9 and 3.8 respectively. By averaging these GP
+        values, Jane's overall GPA is calculated as (3.9 + 3.8) / 2 = 3.85  
     <br>
     <h2>Standard Input</h2>
     <li>
-        A single list representing a student along with their courses and corresponding grades.
+      A single line containging student's name, courses lists, and corresponding grades list separated by two commas.  
     </li>
 
     <h2>Standard Output</h2>
     <li>
-        A single float number representing the overall GPA.
+        A single line containing the overall GPA for the student.
     </li>
     <div class="testCase">
     <h3>Test Case 1</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Sara', ['English','French','Physics','Math'], [(60,40),(35,38),(52,20),(55,10)]]<span class="crarr">&crarr;</span>
+    Jane,,['French','Math'],,[(90,40),(85,30)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            2.85</pre>
+            3.85</pre>
 
     <h3>Test Case 2</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Dan', ['Math','English','French','Physics'], [(54,30),(50,39),(15,34),(42,15)]]<span class="crarr">&crarr;</span>
+     Dan,['Math','English','French','Physics'],[(54,30),(50,39),(15,34),(42,15)]<span class="crarr">&crarr;</span>   
     </p>
     <h4>Output Sequence</h4>
         <pre>
@@ -330,11 +328,11 @@
     <h3>Test Case 3</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Jane', ['French','Math'], [(56,34),(55,30)]]<span class="crarr">&crarr;</span>
+    ['Sara', ['English','French','Physics','Math'], [(60,40),(35,38),(52,20),(55,10)]]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            3.85</pre>
+            2.928</pre>
     <br>
     </div>
 
