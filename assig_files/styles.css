@@ -169,7 +169,6 @@ img {
 
 
 /*----------------------------*/
-
 .menu ul {
     list-style: none;
     padding: 0;
@@ -328,12 +327,12 @@ ol li li {
 
 .testCase pre{
     font-family: 'Courier Prime';
-    border: 3px solid #83a904;
+    border: 3px solid #140303;
     max-height: 500px;
     overflow: scroll;
     padding: 20px 0;
-    background: #333;
-    color: #83a904;
+    background: #000000;
+    color: #ffffff;
     text-shadow: 2px 2px 3px #222;
 }
 .testCase .inputSeq{
@@ -353,3 +352,16 @@ ol li li {
 }
 dt {margin-top: 10px;}
 dd {margin-left: 30px;}
+
+
+.pythonCodeComment {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace; /* This font resembles the style often used for code. */
+    color: rgb(54, 177, 54);
+    padding: 10px; /* Optional: Add some padding for better visual appearance */
+    border-radius: 5px; /* Optional: Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+    margin: 1px 0; /* Optional: Margin for spacing */
+    font-size: 16px;
+    line-height: 1;
+}
