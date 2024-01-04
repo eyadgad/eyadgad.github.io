@@ -25,9 +25,6 @@
             <img src="./assig_files/uwo.png" alt="UWO" style="width: 450px; margin: 50px auto 0px;">
 
          <script>
-    $(function() {
-        $(".menu").hide() // try to hide google navigation bar
-    });
 </script>
 <div class="title">
     <div class="titleBox">
@@ -46,32 +43,37 @@
         </div>
         <div class="labName">
             Due Date: <br>
-            Sunday, March 07, 2024 23:55:00 ET
+            Sunday, March 06, 2024 23:55:00 ET
             <br>
             <br>
-            <div id="countdown" class="prpl" style="display: block;" data-duedate="March 7, 2024 23:55:59">EXPIRED</div>
+            <div id="countdown" class="prpl" style="display: block;" data-duedate="March 6, 2024 23:55:59">EXPIRED</div>
         </div>
+    </div>
+
+    <div class="menu">
+        
+        <ul>
+            <li><a href="#intro"><b>1 </b> Introduction</a></li>
+            <li><a href="#1"><b>1.1 </b> Problem 1</a></li>
+            <li><a href="#2"><b>1.2 </b> Problem 2</a></li>
+            <li><a href="#3"><b>1.3 </b> Problem 3</a></li>
+            <li><a href="#4"><b>2 </b> Tips and Guidelines</a></li>
+            <li><a href="#5"><b>3 </b> General Notes</a></li>
+            <li><a href="#owl"><b>4 </b> Gradescope Submission</a></li>
+        </ul>
     </div>
     <div class="alert alert-danger" role="alert">
         <h2>Academic dishonesty</h2><br>
 
-            Assignments will be run through a similarity checking software to check for code that looks very similar to that of other students. Sharing or copying code in any way is considered plagiarism (<a style="color:yellow" target="_blank" href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/images/AcDishonesty.pdf">Academic dishonesty</a>) and may result in a mark of 0 on the assignment and/or reported to the Dean's Office. Plagiarism is a serious offence. Work is to be done <b>individually.</b>
+            Assignments will be run through a similarity checking software to check for code that looks
+            very similar to that of other students. Sharing or copying code in any way is considered 
+            plagiarism (<a style="color:yellow" target="_blank" href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/images/AcDishonesty.pdf">Academic dishonesty</a>)
+            and may result in a mark of 0 on the assignment and/or reported to the Dean's Office.
+            Plagiarism is a serious offence. Work is to be done <b>individually.</b>
     </div>
 
     <br>
-    <div class="menu">
-        <p>
-            </p><center>The following are the instructions for assignment 01:</center>
-        <p></p>
-        <ul>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#intro"><b>- </b> Introduction</a></li>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#1"><b>1 </b>Files</a></li>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#2"><b>2 </b>Tips and Guidelines</a></li>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#3"><b>3 </b>Rules</a></li>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#4"><b>4 </b>Marking Guidelines</a></li>
-            <li><a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#owl"><b>- </b>Assignment Submission</a></li>
-        </ul>
-    </div>
+    
 
 </div>
 
@@ -115,56 +117,32 @@
     <p>
         <br>Meet Vecna, a passionate educator invested in enhancing our educational system.
         Vecna has dedicated effort to crafting a Grade Management System designed for our
-        university's requirements. Although Vecna lacks programming skills, we have the
+        university's requirements. The system is intended to manage student records of their 
+        courses and grades. Although Vecna lacks programming skills, we have the
         opportunity to support him on his journey. 
     </p>
     <p>
         Leveraging our proficiency in Python
-        and familiarity with data types, if statements, loops, lists, and functions,
+        and familiarity with <b>data types(e.g., integers, floats, and strings), if statements, loops, tuples, lists, and functions</b>,
         we can assist Vecna in tackling the <b style="color: rgb(236, 30, 30)">three programming problems</b> he has 
         outlined. The purpose of these problems is to enhance problem-solving abilities,
         advance coding proficiency, and, most importantly, address real-life 
         challenges through programming. 
     </p>
     <p>
-        Students must strictly adhere to the specified standards for this assignment,
-        as most of it will undergo computerized grading. The grading system is designed
-        to evaluate submissions based on precise criteria, encompassing wording, 
-        spelling, spacing, and output order. Grades will reflect both the accuracy of the output and the fidelity to these formatting standards. The capacity to meticulously follow guidelines and maintain coding standards is a foundational skill in computer science.
-    <!----------
-    <div class= " alert alert-danger" role="alert">
-        <h2 style="color: rgb(255, 255, 255)" >This assignment is broken into two parts.</h2><br>
-            <b>Project One (01)</b> <br> consists of three (03) separate Python programs, each containing individual projects. <br>
-            <b>Project Two (02)</b> <br> consists of a written document.
-    </div>--------->
+    <h2>Notes</h2>
+    <ul>
+        <li>For the three problems, any mentioned course has a coursework grade out of 60 marks and a final exam grade out of 40 marks.</li>
+        <li>Students' names are unique. Therefore, if a student's name appears multiple times in the input, it is the same student.</li>
+        <li>60% in a coursework equates to 36 marks out of 60 and 50% in a final exam equates to 20 marks out of 40.</li>
+        <li>The final grade for a course is the sum of its coursework and final exam grades, totaling 100 marks.</li>
+        <li>All given inputs are string type, even if they contain numbers. Therefore, you must convert them to the appropriate data type before performing any operations or tasks.</li>
+        <li>The output must be in the exact same order as demonstrated in the test cases of each problem.</li>
+        <li>All floating-point numbers in the output(printing) must be up to two decimal places(e.g., if the number is 3.149, then the output must be 3.14, NOT 3.15).</li>
+    </ul>       
+
     </p>
-    <b>Example Code: </b>
-    <br>
-
-    The students are provided with an executable example of the completed program. Notice that all three projects in Part One (01) are contained in a single file for ease of use. This allows the student to see the exact expected input and output of the required program as well as the behaviour based on any inputs. Students are to break each part down to separate and independent Python programs. This executable is compiled for a Windows based computer.
-    <br>
-    <p class="whatToLearn">
-        <b>Late policy </b> <br>
-    </p><ul class="simpleList">
-
-        <li>
-            It is expected that students budget enough time to properly submit their assignments via OWL and allow for any unforeseen technological issues. Students are expected to regularly backup their assignments and submit well before any deadline.
-        </li>
-        <li>Each student will be given four (04) “late coupons” in total for the entire semester that may be used to submit an assignment one day late per coupon.
-        </li>
-        <li> Late coupons will be applied automatically when an assignment is submitted late and tracked in the OWL gradebook. No intervention by the students is required.
-        </li>
-        <li> If a student has no late coupons remaining or submits an assignment more than 4 days late, a zero grade will be given for the assignment (no partial late marks will be given).
-        </li>
-        <li> Late coupons must be used before special circumstances are considered.
-        </li>
-        <li> After all late coupons are used, no extensions will be given for assignments except for in the
-            event of serious medical or compassionate grounds. A student must follow the procedure for
-            Academic Accommodation for Medical Illness as given in the Course Outline document.
-        </li>
-
-    </ul>
-    <br>
+    
     
 </section>
 
@@ -189,7 +167,7 @@
         their records. He has records and each record is a list consists of a <b>student's name</b>,
         <b>course name</b>, and associated <b>grades</b>. 
         The student's name and course name are strings,
-        while the grades are represented as a tuple containing coursework and final exam scores,
+        while the grades are represented as a tuple containing coursework and final exam grades(coursework, final exam),
         with their total not exceeding 100.
         <br>For example, in the input of test case 1, a record might look like ['Sara', 'English', (60, 40)],
         indicating Sara got full marks in both coursework and the final exam for the English course.
@@ -204,14 +182,9 @@
         and the third element is list of tuples representing the grades for each respective course.
     </p>  
 
-    <h2>Notes</h2>
-    <ul>
-        <li>Each course has a coursework grade out of 60 marks and a final exam grade out of 40 marks.</li>
-        <li>The final grade for a course is the sum of its coursework and final exam grades, totaling 100 marks.</li>
-    </ul> 
     <H2>Standard Input</H2>
     <li>
-        A single integer number representing the number of records in the list.
+        A single integer number representing the number of records.
     </li>
     <li>
         Multiple lines, each line contains student's name, course name, and associated grades separated by two commas.
@@ -273,7 +246,6 @@
         values range from 4.0 GP for grades between 100-95 marks 
         to 0 GP for grades below 50 marks, as outlined in the table 
         below:
-    </p>
     <table>
         <tr><td><b>GP</b></td><td><b>Grades</b></td></tr>
         <tr><td>4.0</td><td>100 - 95</td></tr>
@@ -288,51 +260,69 @@
         <tr><td>1.0</td><td>54 - 50</td></tr>
         <tr><td>0.0</td><td>Below 50</td></tr>
     </table>
-    <p>
-        The overall GPA for each course is calculated by mapping
-        its final grades to the corresponding GP value from the table 
-        and then averaging the GP values of all enrolled courses for each student.
-        To illustrate, considering the example in test case 1 where Jane
-        has final grades of 90 in French and final grades of 85 in Math, the 
-        corresponding GP values are 3.9 and 3.8 respectively. By averaging these GP
-        values, Jane's overall GPA is calculated as (3.9 + 3.8) / 2 = 3.85  
     <br>
+    To calculate the GPA for a student:
+        <br>
+        <li> 
+            The GP value for each course is determined by mapping 
+            its final grade to the corresponding GP value from the table.
+        </li>
+        <li>
+            The GPA is then calculated by averaging the GP values.
+        </li>
+        As an example in test case 1, for a student named Jane with grades of 90
+        in French and 85 in Math, her respective GP values would be 3.9 and 3.8. 
+        By averaging these GP values, Jane's overall GPA is calculated as (3.9 + 3.8) / 2 = 3.85  
+    
+    </p>
+    <p>
+        In this problem, You are provided with unique records and each record represents a unique student along with student's enrolled courses and corresponding grades.
+        Your task is to calculate the overall GPA for each student and print the top 5 students based on their GPAs.   
     <h2>Standard Input</h2>
     <li>
-      A single line containging student's name, courses lists, and corresponding grades list separated by two commas.  
+      A single integer number representing the number of unique records.
     </li>
+    <li>
+        Multiple lines, each line is a record consists of student's name, courses, and associated grades separated by two commas.
 
     <h2>Standard Output</h2>
     <li>
-        A single line containing the overall GPA for the student.
-    </li>
+        Print the top 5 students in descending order based on their GPAs. Each line contains student's name and their GPA separated by a comma,
+        as "{student's name},{GPA}".
     <div class="testCase">
     <h3>Test Case 1</h3>
     <h4>Input Sequence</h4>
-    <p class="inputSeq">
-    Jane,,['French','Math'],,[(90,40),(85,30)]<span class="crarr">&crarr;</span>
+    <p class="inputSeq">6<span class="crarr">&crarr;</span>Jane,,['French','Math'],,[(56,34),(55,30)]<span class="crarr">&crarr;</span>Mike,,['English','Physics','French','Math'],,[(50,30),(42,20),(10,28),(12,25)]<span class="crarr">&crarr;</span>Justin,,['English','Chemistry','Physics','Math'],,[(60,38),(30,28),(32,15),(29,25)]<span class="crarr">&crarr;</span>Max,,['History'],,[(51,35)]<span class="crarr">&crarr;</span>Steve,,['English','Chemistry','Physics','Math'],,[(29,28),(23,28),(22,28),(23,15)]<span class="crarr">&crarr;</span>Will,,['Chemistry','Physics','Math'],,[(60,39),(59,38),(57,37)]<span class="crarr">&crarr;</span>
     </p>
+    <!--3.85 , 1.35, 1.57, 3.80 , 3.97
+    -->
     <h4>Output Sequence</h4>
         <pre>
-            3.85</pre>
+            Will,3.97
+            Jane,3.85
+            Justin,3.80
+            Max,1.57
+            Mike,1.35</pre>
 
     <h3>Test Case 2</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-     Dan,['Math','English','French','Physics'],[(54,30),(50,39),(15,34),(42,15)]<span class="crarr">&crarr;</span>   
+    3<span class="crarr">&crarr;</span>Hopper,,['History','Art','Math'],,[(50,10),(22,20),(10,38)]<span class="crarr">&crarr;</span>Joyce,,['English','French','Physics','Math'],,[(59,38),(50,28),(42,15),(49,25)]<span class="crarr">&crarr;</span>Murray,,['Electronics','Physics','Math','Russian'],,[(60,39),(59,38),(58,37),(60,40)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            2.2</pre>
+            Murray,4.00
+            Joyce,2.90
+            Hopper,0.57</pre>
 
     <h3>Test Case 3</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Sara', ['English','French','Physics','Math'], [(60,40),(35,38),(52,20),(55,10)]]<span class="crarr">&crarr;</span>
+        1<span class="crarr">&crarr;</span>Sara,,['English','French','Physics','Math'],,[(60,40),(35,38),(52,20),(55,10)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            2.928</pre>
+            Sara,2.92</pre>
     <br>
     </div>
 
@@ -355,51 +345,44 @@
         a universal passing criterion applicable across all courses.
         According to this new regulation, a student will successfully
         pass a course only if they achieve a minimum of 60% in coursework
-        and a minimum of 50% in the final exam. Vecna now seeks to integrate
+        and a minimum of 50% in the final exam. There are some exceptions that students 
+        may be did not take the final exam due to medical reasons. In this case, the final
+        exam grade will be -1 and the final grade will be incomplete. Vecna now seeks to integrate
         this universal passing criterion into the existing grade management
-        system to automatically determine the pass or fail status for each
+        system to automatically determine the pass(P) or fail(F) or incomplete(INC) status for each
         student based on the transformed records where each record represents
         a unique student along with their courses and corresponding grades.
     </p>
-    <p> For example, let's consider Sara's courses and their respective grades.
+    <p> For example, in the first test case, Sara's courses and their respective grades.
         After applying the universal passing criterion, it is determined that
-        Sara will pass in English and Physics, while she will fail in French
-        and Math. This decision is based on the fact that the coursework grade
-        for French does not reach the minimum requirement of 60%, and the final
-        exam grade for Math does not reach the minimum requirement of 50%.
+        Sara will pass in English and Physics. However, she will not pass in Math due to a final exam grade below the 50% threshold.
+        Additionally, as Sara did not take the final exam for French, her status for that course is incomplete.
     </p>
-    <br>
-
-    <h2>Notes</h2>
-    <ul>
-        <li>60% in coursework equates to 36 marks out of 60.</li>
-        <li>50% in the final exam corresponds to 20 marks out of 40.</li>
-    </ul>
 
     <h2>Standard Input</h2>
     <li>
-        A single list representing a student along with their courses and corresponding grades.
+        A single line containing a record consists of student's name, courses, and associated grades separated by two commas.
     </li>
 
     <h2>Standard Output</h2>
     <li>
-        A single list representing the pass or fail status for each course.
+        A single list containing the P or F or INC status for each course respectively.
     </li>
     
     <div class="testCase">
     <h3>Test Case 1</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Sara', ['English','French','Physics','Math'], [(60,40),(35,38),(52,20),(55,10)]]<span class="crarr">&crarr;</span>
+    Sara,,['English','French','Physics','Math'],,[(60,40),(35,-1),(52,20),(55,10)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
-            ['P','F','P','F']</pre>
+            ['P','INC','P','F']</pre>
 
     <h3>Test Case 2</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Dan', ['Math','English','French','Physics'], [(54,30),(50,39),(15,34),(42,15)]]<span class="crarr">&crarr;</span>
+        Dan,,['Math','English','French','Physics'],,[(54,30),(50,39),(15,34),(42,15)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
@@ -408,7 +391,7 @@
     <h3>Test Case 3</h3>
     <h4>Input Sequence</h4>
     <p class="inputSeq">
-    ['Jane', ['French','Math'], [(56,34),(55,30)]]<span class="crarr">&crarr;</span>
+        Jane,,['French','Math'],,[(56,34),(55,30)]<span class="crarr">&crarr;</span>
     </p>
     <h4>Output Sequence</h4>
         <pre>
@@ -429,27 +412,32 @@
     </h1>
     <ol>
         <li> All code is to be indented correctly. </li>
-        <li>Comments at the very beginning (top – first lines) of the file must be:
-            <img src="./assig_files/07.png" alt="" style="width: 100%" ;="">
-            <br>
+        <li> Comments at the very beginning (top – first lines) of the file must be:
+
+            <div class="pythonCodeComment" font-size="2px">
+                '''<br>
+                CS1026a 2024<br>
+                Assignment 02 Problem 01<br>
+                Your Name<br>
+                Your Student ID Number<br>
+                Your UWO Account Name<br>
+                Date Completed(DD/MM/YYYY)<br>
+                '''<br>
+            </div>
             <b>NOTE: </b>
-            Change the second line for each part accordingly:
-            <br>
-            END: Project One (01) – Part A
-            <br>
-END: Project One (01) – Part B
-<br>
-END: Project One (01) – Part C
-<br>
+            Change the second line for each problem accordingly:<br>
+            END: Problem 01<br>
+            END: Problem 02<br>
+            END: Problem 03<br>
+            
 
         </li>
-        <li>The second last line of each of your parts for Project 1 must indicate successful completion of the code accordingly:
-            <br>
-            END: Project One &lt;01&gt; – Part A
-            <br>
-            END: Project One &lt;01&gt; – Part B
-            <br>
-            END: Project One &lt;01&gt; – Part C
+        
+        <li>The second last line of each of your problems 
+            must indicate successful completion of the code accordingly:<br>
+            END: Problem 01<br>
+            END: Problem 02<br>
+            END: Problem 03<br>
         </li>
         <li>The last line of your code must print out your name and your Western user name.
             <br>
@@ -457,12 +445,11 @@ END: Project One (01) – Part C
             <br>
             Max Magguilli mmagg37 000326384
         </li>
-        <li>
-            All variables (excluding any counter variable inside for loops) MUST have a comment describing their intended use(s).
-        </li>
-        <li>For this assignment, three separate and independent Python files are to be submitted. Each Python file (ending in the suffix .py) is required. All code for all three parts of Project One (01) are be submitted.
-        </li>
-        <li>The student MUST submit three Python files for Project One (01) of this assignment. Any other file or any file with any other extension except .py will NOT be graded.
+        <li>All variables (excluding any counter variable inside for loops) MUST have a comment describing their intended use(s).</li>
+        <li>For this assignment, three separate and independent Python files are to be submitted. 
+        Each Python file (ending in the suffix .py) must contain solution to one of the three problems.
+        
+        <li>The student MUST submit three Python files only for this assignment. Any other file or any file with any other extension except .py will NOT be graded.
         </li>
         <li>A comment describing the code for each exercise must be included. The comment(s) can be brief but must convey what that section of code performs.
         </li>
@@ -482,16 +469,11 @@ END: Project One (01) – Part C
     <!----------############################--------->
     <h1>
         <span class="exNo">3</span>
-        <span class="exName">RULES</span>
+        <span class="exName">GENERAL NOTES</span>
     </h1>
     <ul>
         <li>
             Read and follow the instructions carefully.
-        </li>
-        <li>
-
-
-            Submit the PDF document (the document MUST have the .PDF extension). No other text document will be graded.
         </li>
         <li>
 
@@ -510,6 +492,9 @@ END: Project One (01) – Part C
 
             last submission as the one for grading by default. There are no penalties for resubmitting. However, re-submissions that come in after the due date will be considered late and automatically subject to the use of late coupons.
         </li>
+        <li>You are required to adhere to the specified standards for this assignment, as most of it will undergo computerized grading.</li>
+        <li>The grading system is designed to evaluate submissions based on precise criteria, encompassing wording, spelling, spacing, and output order.</li>
+        <li>Grades will reflect both the accuracy of the output and the fidelity to these formatting standards.</li>
     </ul>
 </section>
 <section>
@@ -522,17 +507,15 @@ END: Project One (01) – Part C
     </h1>
     <p>The assignment may be marked as a combination of your auto-graded tests and manual grading of your code logic, comments, formatting, style, etc. Below is a breakdown of the marks for this assignment:</p>
     <ul>
-        <li><b>[55 marks] </b> Auto-Testing your code for correctness and adherence to the specifications by producing the expected output
+        <li><b>[60 marks] </b> Auto-Testing your code for correctness and adherence to the specifications by producing the expected output
         </li>
-        <li><b> [15 marks] </b> Code logic and completeness
+        <li><b>[15 marks] </b> Code logic and completeness
         </li>
-        <li><b> [5 marks] </b> Comments
+        <li><b>[10 marks] </b> Comments
         </li>
-        <li><b> [10 marks] </b> Code formatting
+        <li><b>[10 marks] </b> Code formatting and organization
         </li>
-        <li><b> [5 marks]</b> Meaningful and properly formatted variables
-        </li>
-        <li><b> [10 marks]</b> Academic Dishonesty Document
+        <li><b>[5 marks]</b> Meaningful and properly formatted variables
         </li>
         <li>
             <b>Total: 100 marks</b>
@@ -554,17 +537,19 @@ END: Project One (01) – Part C
         <span class="exName">GRADESCOPE SUBMISSION </span>
     </h1>
     <ol>
-        <li> You must submit the 4 files to the Assignment 1 submission page on Gradescope. The required files are:
-            <br> <span class="badge badge-success">yourUWOAccountName_Asn01_A.py</span>( for part A of Project One (01) )
-            <br><span class="badge badge-success">yourUWOAccountName_Asn01_B.py</span>( for part B of Project One (01) )
-            <br><span class="badge badge-success">yourUWOAccountName_Asn01_C.py</span> ( for part C of Project One (01) )
-            <br><span class="badge badge-success">yourUWOAccountName_Asn01.pdf</span>( for Project Two (02) )
+        <li> You must submit the <b>three</b> files to the Assignment 2 submission page on Gradescope. The required files are:<br> 
+            <span class="badge badge-success">yourUWOAccountName_Asn02_01.py</span> (for Problem 1)<br>
+            <span class="badge badge-success">yourUWOAccountName_Asn02_02.py</span> (for Problem 2)<br>
+            <span class="badge badge-success">yourUWOAccountName_Asn02_03.py</span> (for Problem 3)<br>
             <br>
-
-
-            (example: assume my UWO email is kdoit373@uwo.ca i.e. if my email is – kdoit373@uwo.ca then my ID will be – kdoit373 So, my UWO Account Name is: kdoit373 and this assignment is Asn01.
+            Example: assume my UWO email is 'kdoit373@uwo.ca', then my UWO Account Name will be 'kdoit373'.<br>
             therefore, my file names that are to be used for submission are: <br>
-            kdoit373_Asn01.py -and- kdoit373_Asn01.pdf
+            <ul>
+                <li>kdoit373_Asn02_01.py (for Problem 1)</li>
+                <li>kdoit373_Asn02_02.py (for Problem 2)</li>
+                <li>kdoit373_Asn02_03.py (for Problem 3)</li>
+            </ul>
+
         </li>
         <li>.html , .ipynb, and all other file extensions will not be accepted under any circumstances and it will result in failing ALL test.</li>
         <li>The submission will be using <a href="https://www.gradescope.ca/courses/11404" target="_blank" rel="noopener noreferrer">Gradescope</a>. <br>
@@ -581,24 +566,24 @@ END: Project One (01) – Part C
     <div class="alert alert-danger" role="alert">
         <h2>Remember!</h2><br>
             <ul>
-                <li>You have 4 coupons (for the entire semester) that will be automatically applied when you submit late.</li>
+                <li>You have 4 late coupons (for the entire semester) that will be automatically applied when you submit late.</li>
+                <li>Each late coupon will allow you to submit one day late. If you have no late coupons remaining or submit an assignment more than 4 days late, a zero grade will be given for the assignment (no partial late marks will be given).</li>
+                <li>After all late coupons are used, no extensions will be given for assignments except for in the event of serious medical or compassionate grounds. A student must follow the procedure for Academic Accommodation for Medical Illness as given in the Course Outline document.</li>
                 <li>It is the student's responsibility to ensure the work was submitted and posted in GradeScope. </li>
-                <li>
-                    Any assignment not submitted correctly will not be graded. </li>
+                <li>Any assignment not submitted correctly will not be graded. </li>
                 <li>Submissions through the email will not be accepted at any circumstances.</li>
                 <li>Please check this page back whenever an announcement is posted regarding this assignment.</li>
-                <li>ONLY the 4 mentioned files are to be submitted. </li>
-                <li>  Do NOT submit any of the other files or folders. </li>
-                <li>Marks will be deducted if you submit anything more than just these four (4) files. </li>
+                <li>ONLY the three mentioned files are to be submitted. </li>
+                <li>Do NOT submit any of the other files or folders. Marks will be deducted if you submit anything more than just these three (3) files. </li>
             </ul>
 
     </div>
 
-    <center>this file was last modified on 2024-12-31 10:12:01 EST</center>
+    <center>This file was last modified on 2024-01-04 10:12:01 EST</center>
 </section>
    
 
-    <a href="https://www.csd.uwo.ca/~ajarada3/other/1026F23/assig.php?assigNo=01#top" class="top">TOP</a>
+    <a href="#top" class="top">TOP</a>
 
 
     <script src="./assig_files/clipboard.min.js.download"></script>
