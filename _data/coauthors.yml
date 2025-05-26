@@ -1,34 +1,23 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Gad":
+  - firstname: ["Gad", G. G.", "Gad Gad"]
+    url: https://scholar.google.com/citations?user=bZRYJuAAAAAJ&hl=en
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Fadlullah":
+  - firstname: ["Zubair", "ZM.", "Z. F.", "Zubair Md Fadlullah"]
+    url: https://scholar.google.com/citations?user=dZyfKpYAAAAJ&hl=en
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Fouda":
+  - firstname: ["Mostafa", "M.", "M. F.", "Mostafa M. Fouda"]
+    url: https://scholar.google.com/citations?user=KrLSBgYAAAAJ&hl=en
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Darweesh":
+  - firstname: ["Mohamed", "M.", "M. S.", "Mohamed S. Darweesh"]
+    url: https://scholar.google.com/citations?user=vzC9o50AAAAJ&hl=en
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Selim":
+  - firstname: ["Sahar", "S. H.", "Sahar Selim"]
+    url: https://scholar.google.com/citations?user=Ynx9NTwAAAAJ&hl=en
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Elattar":
+  - firstname: ["Mustafa", "M. E.", "Mustafa A. Elattar"]
+    url: https://scholar.google.com/citations?user=BJoskL8AAAAJ&hl=en
