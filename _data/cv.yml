@@ -4,7 +4,7 @@
     - name: Full Name
       value: Eyad Gad
     - name: Date of Birth
-      value: 
+      value:
     - name: Email
       value: <a href="mailto:eyad.gad@outlook.com">eyad.gad@outlook.com</a>
     - name: Languages
@@ -27,4 +27,3 @@
       description:
         - Bachelor of Applied Science (Honours) in Computer Engineering
         - Thesis&#58; Advancing Brain Tumor Segmentation via Attention-based 3D U-Net Architecture and Digital Image Processing, Supervised by <em><a href="https://eas.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh" target="_blank">Prof. Mohamed S. Darweesh</a></em>
-
