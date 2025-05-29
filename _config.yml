@@ -9,7 +9,6 @@ keywords: eyad-gad, academic-website, portfolio-website # add your own keywords 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-
 # contact_note: >
 #   You can even add a little note about which of these is the best way to reach you.
 # description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -19,13 +18,22 @@ icon: favicon.ico # the emoji used as the favicon (alternatively, provide image 
 #   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
-
-
 url: https://eyadgad.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
+
+images:
+  profile: eyadgad-img.png
+  community_servoices: cmmunity_services.svg
+  selected_posts: selected_posts.svg
+  selected_papers: selected_papers.svg
+  publications: publications.svg
+  repositories: repositories.svg
+  cv: cv.svg
+  not_found: not_found.svg
+  not_found_icon: not_found_icon.svg
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -57,7 +65,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1140px
 
 # TODO: add layout settings (single page vs. multi-page)
 
