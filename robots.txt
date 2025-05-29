@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://eyadgadthub.io/sitemap.xml
+Sitemap: https://eyadgad.github.io/sitemap.xml
