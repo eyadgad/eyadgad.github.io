@@ -30,7 +30,7 @@ nav_order: 4
 - **ECEN422**: Intro. to Computer Security
 - **ECEN433**: Intro. to Parallel Computing
 - **ECEN432**: Intro. to Computer Architecture
-- **ECEN438**: Advanced  Computer Architecture
+- **ECEN438**: Advanced Computer Architecture
 - **ECEN427**: Operating Systems
 - **ECEN428**: Software Engineering
 - **CSCI451**: Digital Image Processing

@@ -10,7 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -28,12 +28,12 @@ I hold **Master’s degree in [Computer Science](https://www.csd.uwo.ca/)** at [
 During my time at Nile University, I worked as a **Intern Researcher** at the [Center for Informatics Sciences](https://www.cis.nu.edu.eg/), supervised by [Dr. Sahar Selim](https://nu.edu.eg/academic-staff/dr-sahar-selim) and [Dr. Mustafa Elattar](https://www.nu.edu.eg/academic-staff/dr-mustafa-elattar).
 
 My research interests lie in **Artificial Intelligence** and its applications in:
-- Internet of Things  
-- Healthcare and medical imaging  
-- Smart networks and security  
 
-Beyond my academic work, I enjoy being physically active through walking, running and cycling. I also enjoy listening to Rock, Metal, and Classical music
----
+- Internet of Things
+- Healthcare and medical imaging
+- Smart networks and security
+
+## Beyond my academic work, I enjoy being physically active through walking, running and cycling. I also enjoy listening to Rock, Metal, and Classical music
 
 > 🔗 For my publications, visit the [Publications Page](/publications/).  
 > 📬 Interested in research or collaboration? Feel free to [contact me](/contact).
