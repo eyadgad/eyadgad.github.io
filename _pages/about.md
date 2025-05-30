@@ -23,8 +23,17 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I hold **Master’s degree in [Computer Science](https://www.csd.uwo.ca/)** at [The University of Western Ontario](https://www.uwo.ca/), under the supervision of [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), under the supervision of [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+During my time at Nile University, I worked as a **Intern Researcher** at the [Center for Informatics Sciences](https://www.cis.nu.edu.eg/), supervised by [Dr. Sahar Selim](https://nu.edu.eg/academic-staff/dr-sahar-selim) and [Dr. Mustafa Elattar](https://www.nu.edu.eg/academic-staff/dr-mustafa-elattar).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests lie in **Artificial Intelligence** and its applications in:
+- Internet of Things  
+- Healthcare and medical imaging  
+- Smart networks and security  
+
+Beyond my academic work, I enjoy being physically active through walking, running and cycling. I also enjoy listening to Rock, Metal, and Classical music
+---
+
+> 🔗 For my publications, visit the [Publications Page](/publications/).  
+> 📬 Interested in research or collaboration? Feel free to [contact me](/contact).

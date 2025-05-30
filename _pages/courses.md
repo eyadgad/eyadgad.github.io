@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-## 🎓 Graduate Courses (Master's in Computer Science, Western University)
+## 🎓 Master's in Computer Science, Western University
 
 - **CS9636**: Network Security
 - **CS9837**: Topics in Smart Cyber-Physical Systems and Networks
@@ -16,21 +16,21 @@ nav_order: 4
 
 ---
 
-## 🎓 Undergraduate Courses (Bachelor's in Computer Engineering, Nile University)
+## 🎓 Bachelor's in Computer Engineering, Nile University
 
 ### 🖥️ Computer Science Courses
 
 - **CSCI001**: Computer & Information Skills
-- **CSCE002**: Introduction to Programming
+- **CSCE002**: Intro. to Programming
 - **ECEN204**: Fundamentals of Data Structures & Algorithms
-- **ECEN305**: Introduction to Computer Systems
+- **ECEN305**: Intro. to Computer Systems
 - **ECEN324**: Computer Systems Software
-- **ECEN421**: Introduction to Computer Networks
-- **ECEN424**: Introduction to Database Systems
-- **ECEN422**: Introduction to Computer Security
-- **ECEN433**: Introduction to Parallel Computing
-- **ECEN432**: Introduction to Computer Architecture
-- **ECEN438**: Advanced Computer Architecture
+- **ECEN421**: Intro. to Computer Networks
+- **ECEN424**: Intro. to Database Systems
+- **ECEN422**: Intro. to Computer Security
+- **ECEN433**: Intro. to Parallel Computing
+- **ECEN432**: Intro. to Computer Architecture
+- **ECEN438**: Advanced  Computer Architecture
 - **ECEN427**: Operating Systems
 - **ECEN428**: Software Engineering
 - **CSCI451**: Digital Image Processing
