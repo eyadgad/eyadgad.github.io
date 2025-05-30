@@ -2,50 +2,22 @@
 layout: page
 permalink: /research/
 title: Research
-description:
-nav: true
-nav_order: 2
----
-
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
-
----
-
-layout: page
-permalink: /research/
-title: Research
 description: Eyad Gad's research in AI, Federated Learning, and Secure IoT Systems.
 nav: true
 nav_order: 2
-
 ---
 
 # 🧠 Research
 
-## 👨‍🔬 About Me
+My previous research and publications focused on using AI in various areas like **medical imaging**, **healthcare systems**, **Internet of Things**, and **smart networks**. I worked on projects such as detecting diseases from medical scans using UNet and Transformers, improving healthcare, and optimizing smart networks using Federated Learning.
 
-I’m **Eyad Gad**, a graduate researcher in Computer Science at Western University, Canada, with a focus on **Artificial Intelligence**, **Federated Learning**, and **Privacy-Preserving Systems**. My work integrates deep learning with distributed and secure computing to address real-world challenges in **IoT security**, **healthcare diagnostics**, and **smart infrastructure**.
+Currently, my main research looks at how AI can solve challenges in Economics. For example, by analyzing data to predict economic risks or detect early signs of financial instability or financial stress.
 
-I have published in leading conferences and journals, contributing to the development of:
-
-- Robust federated learning techniques under non-IID data conditions
-- Lightweight and communication-efficient AI models
-- Privacy-preserving deep learning using differential privacy and knowledge distillation
-- IoT-based security and smart system optimization
+If you're interested in working together or need support with research in these areas, feel free to [contact me](/contact).
 
 ---
 
-## 📚 Publications
+# 📚 Publications
 
 Use the search bar below to filter my research by topic, keyword, year, or venue.
 
@@ -58,5 +30,3 @@ Use the search bar below to filter my research by topic, keyword, year, or venue
 </div>
 
 ---
-
-If you’re interested in collaboration or research consulting, feel free to [contact me](/contact).
