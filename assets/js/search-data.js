@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "Research",
-          description: "",
+          description: "Eyad Gad&#39;s research in AI, Federated Learning, and Secure IoT Systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
-          },
-        },{id: "nav-courses",
-          title: "Courses",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/courses/";
           },
         },{id: "nav-repositories",
           title: "Repositories",
@@ -29,6 +22,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
+          },
+        },{id: "nav-courses",
+          title: "Courses",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/courses/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
@@ -42,7 +42,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/resume/";
           },
         },{
         id: 'social-email',
