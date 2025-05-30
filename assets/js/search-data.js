@@ -10,8 +10,8 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "Research",
-          description: "Eyad Gad&#39;s research in AI, Federated Learning, and Secure IoT Systems.",
+          title: "🧠 Research",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
