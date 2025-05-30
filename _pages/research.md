@@ -1,13 +1,11 @@
 ---
 layout: page
 permalink: /research/
-title: Research
-description: Eyad Gad's research in AI, Federated Learning, and Secure IoT Systems.
+title: 🧠 Research
+description: 
 nav: true
 nav_order: 2
 ---
-
-# 🧠 Research
 
 My previous research and publications focused on using AI in various areas like **medical imaging**, **healthcare systems**, **Internet of Things**, and **smart networks**. I worked on projects such as detecting diseases from medical scans using UNet and Transformers, improving healthcare, and optimizing smart networks using Federated Learning.
 
