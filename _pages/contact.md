@@ -6,43 +6,45 @@ nav: true
 nav_order: 7
 ---
 
-# 📬 Get in Touch
+<div style="text-align: center;">
+  <h2>📬 Get in Touch</h2>
+  <p>If you're interested in collaboration, research consulting, or just want to say hello, feel free to reach out using the form below. I'll get back to you as soon as I can.</p>
+</div>
 
-If you're interested in collaboration, research consulting, or just want to say hello, feel free to reach out using the form below. I’ll get back to you as soon as I can.
-
-<form class="work-request" onsubmit="sendEmail(); reset(); return false;">
-  <div class="work-request--information">
-    <div class="information-name">
+<form class="contact-form" onsubmit="sendEmail(); reset(); return false;" style="max-width: 600px; margin: auto;">
+  <div style="display: grid; gap: 1rem;">
+    <div>
       <label for="first-name">First Name</label>
-      <input id="first-name" type="text" spellcheck="false" required>
+      <input id="first-name" type="text" required>
     </div>
-    <div class="information-name">
+    <div>
       <label for="last-name">Last Name</label>
-      <input id="last-name" type="text" spellcheck="false" required>
+      <input id="last-name" type="text" required>
     </div>
-    <div class="information-email">
+    <div>
       <label for="email">Email</label>
-      <input id="email" type="email" spellcheck="false" required>
+      <input id="email" type="email" required>
     </div>
-    <div class="information-major">
+    <div>
       <label for="major">Major</label>
-      <input id="major" type="text" spellcheck="false">
+      <input id="major" type="text">
     </div>
-    <div class="information-interests">
+    <div>
       <label for="interests">Interests</label>
-      <input id="interests" type="text" spellcheck="false">
+      <input id="interests" type="text">
     </div>
-    <div class="information-social">
+    <div>
       <label for="social-media">Social Media</label>
-      <input id="social-media" type="text" spellcheck="false">
+      <input id="social-media" type="text">
     </div>
-    <div class="information-boxmsg">
+    <div>
       <label for="message">Message</label>
-      <textarea id="message" rows="4" spellcheck="false" required></textarea>
+      <textarea id="message" rows="4" required></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Send" style="padding: 0.5rem 1rem;">
     </div>
   </div>
-  <br><br>
-  <input type="submit" value="Send">
 </form>
 
 <script>
@@ -62,12 +64,8 @@ If you're interested in collaboration, research consulting, or just want to say 
   }
 
   function reset() {
-    document.getElementById("first-name").value = "";
-    document.getElementById("last-name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("major").value = "";
-    document.getElementById("interests").value = "";
-    document.getElementById("social-media").value = "";
-    document.getElementById("message").value = "";
+    ['first-name', 'last-name', 'email', 'major', 'interests', 'social-media', 'message'].forEach(id => {
+      document.getElementById(id).value = "";
+    });
   }
 </script>
