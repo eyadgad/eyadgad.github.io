@@ -22,6 +22,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 I am a Research Assistant at [NORDIK Institute](https://nordikinstitute.com).
 I hold **Master’s degree in Computer Science** at [The University of Western Ontario](https://www.uwo.ca/), supervised by [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), supervised by [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
 
