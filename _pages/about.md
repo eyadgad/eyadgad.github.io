@@ -35,5 +35,5 @@ My research interests lie in **Artificial Intelligence** and its applications in
 
 Beyond my academic work, I enjoy being physically active through walking, running and cycling. I also enjoy listening to Rock, Metal, and Classical music
 
-> 🔗 For my publications, visit the [Publications Page](/publications/).  
+> 🔗 For my publications, visit the [Reseach Page](/research/).  
 > 📬 Interested in research or collaboration? Feel free to [contact me](/contact).
