@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <h3>Welcome! <span class="wave">👋</span></h3>
 
 profile:
   align: right
@@ -22,16 +22,10 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+I am a Research Assistant at [NORDIK Institute](https://nordikinstitute.com).
+I hold **Master’s degree in Computer Science** at [The University of Western Ontario](https://www.uwo.ca/), supervised by [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), supervised by [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
 
-I hold **Master’s degree in Computer Science** at [The University of Western Ontario](https://www.uwo.ca/), under the supervision of [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), under the supervision of [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
-
-During my time at Nile University, I worked as a **Intern Researcher** at the [Center for Informatics Sciences](https://www.cis.nu.edu.eg/), supervised by [Dr. Sahar Selim](https://nu.edu.eg/academic-staff/dr-sahar-selim) and [Dr. Mustafa Elattar](https://www.nu.edu.eg/academic-staff/dr-mustafa-elattar).
-
-My research interests lie in **Artificial Intelligence** and its applications in:
-
-- Internet of Things
-- Healthcare and medical imaging
-- Smart networks and security
+I have experience in research and my research interests lie in **Artificial Intelligence** and its applications in Internet of Things, medical imaging, Smart networks and security.
 
 Beyond my academic work, I enjoy being physically active through walking, running and cycling. I also enjoy listening to Rock, Metal, and Classical music
 
