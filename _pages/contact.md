@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-nav: true
+nav: true 
 nav_order: 6
 ---
 
@@ -92,7 +92,8 @@ nav_order: 6
   }
 </style>
 
-<p>If you're interested in research collaboration, or just want to say hello, feel free to reach out using the form below, or send me directly at <a href="mailto: eyad.gad@outlook.com">
+<h2>Get in touch</h2>
+<p>If you're interested in research collaboration, or just want to say hello, feel free to reach out using the form below.</p>
 
 <form onsubmit="sendEmail(); reset(); return false;">
   <div>
