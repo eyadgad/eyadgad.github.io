@@ -25,7 +25,7 @@ latest_posts:
 
 I am a Research Assistant & Data Scientist at [NORDIK Institute](https://nordikinstitute.com).
 
-## I hold **Master’s in Computer Science** at [The University of Western Ontario](https://www.uwo.ca/), supervised by [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), supervised by [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
+I hold **Master’s in Computer Science** at [The University of Western Ontario](https://www.uwo.ca/), supervised by [Prof. Zubair Fadlullah](https://www.zfadlullah.org/home), and **Bachelor's in Computer Engineering** from [Nile University](https://www.nu.edu.eg/), supervised by [Prof. Mohamed Darweesh](https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh).
 
 My research interests lie in **Artificial Intelligence** and its applications in Internet of Things, medical imaging, Smart networks and security.
 
