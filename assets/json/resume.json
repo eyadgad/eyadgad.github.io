@@ -87,12 +87,7 @@
       "endDate": "2024-12-01",
       "score": "87%",
       "thesis": "Combating IoT Attacks In AI-Driven Networks Via Robust And Resource-Efficient Federated Learning",
-      "courses": [
-        "Smart Cyber-Physical Systems",
-        "Theoretical Machine Learning",
-        "Networks Security",
-        "Convex Optimization"
-      ]
+      "courses": ["Smart Cyber-Physical Systems", "Theoretical Machine Learning", "Networks Security", "Convex Optimization"]
     },
     {
       "institution": "Nile University",
@@ -195,89 +190,67 @@
     {
       "name": "Federated Learning Based IoT Attack Detection",
       "_summary": "Implemented Federated Learning for IoT attack detection in IID and non-IID settings.",
-      "highlights": [
-        "Enhanced model robustness against data heterogeneity"
-      ],
+      "highlights": ["Enhanced model robustness against data heterogeneity"],
       "url": "https://github.com/eyadgad/Federated-Learning-Based-IoT-Attack-Detection-in-IID-and-Non-IID"
     },
     {
       "name": "Advanced Lane Detection Based on Digital Image Processing",
       "_summary": "Designed a lane detection system leveraging digital image processing techniques.",
-      "highlights": [
-        "Improved road marking detection for autonomous systems"
-      ],
+      "highlights": ["Improved road marking detection for autonomous systems"],
       "url": "https://github.com/eyadgad/Advanced-Lane-Detection-Based-on-Digital-Image-Processing"
     },
     {
       "name": "Brain Tumor Segmentation via 3D U-Net",
       "_summary": "Designed and trained a 3D U-Net architecture with attention mechanisms for brain tumor segmentation.",
-      "highlights": [
-        "Improved segmentation accuracy using advanced deep learning techniques"
-      ],
+      "highlights": ["Improved segmentation accuracy using advanced deep learning techniques"],
       "url": "https://github.com/eyadgad/Brain-Tumor-Segmentation-using-3D-U-Net-Architecture"
     },
     {
       "name": "Breast Cancer Segmentation Using UNet and FedProx",
       "_summary": "Implemented an FL-based U-Net model with FedProx to improve medical image segmentation performance across distributed datasets.",
-      "highlights": [
-        "Enhanced model robustness against non-IID data"
-      ],
+      "highlights": ["Enhanced model robustness against non-IID data"],
       "url": "https://github.com/eyadgad/Breast-Cancer-Segmentation-Using-U-Net-and-FedProx"
     },
     {
       "name": "GUI-Based Shopping System with Database Integration",
       "_summary": "Developed a PyQt5-based GUI shopping system with integrated database management.",
-      "highlights": [
-        "Enhanced user interface design and improved database operations"
-      ],
+      "highlights": ["Enhanced user interface design and improved database operations"],
       "url": "https://github.com/eyadgad/GUI-Based-Shopping-System-with-Database-Integration-Using-PyQt5"
     },
     {
       "name": "Multi-Node Messaging System",
       "_summary": "Designed a messaging system using sockets and threading for multi-node communication.",
-      "highlights": [
-        "Implemented efficient messaging protocols for enhanced connectivity"
-      ],
+      "highlights": ["Implemented efficient messaging protocols for enhanced connectivity"],
       "url": "https://github.com/eyadgad/Multi-Node-Messaging-System"
     },
     {
       "name": "Digital IC Design of 4-bit CMOS-based ALU",
       "_summary": "Designed and implemented a 4-bit CMOS-based ALU using Cadence for digital IC design.",
-      "highlights": [
-        "Used Cadence tools for design and simulation"
-      ],
+      "highlights": ["Used Cadence tools for design and simulation"],
       "url": "https://github.com/eyadgad/Digital-IC-Design-of-ALU-Using-Cadence"
     },
     {
       "name": "8086-Based Reverse Polish Notation Calculator",
       "_summary": "Designed a calculator system using the 8086 microprocessor for RPN calculations.",
-      "highlights": [
-        "Developed using assembly language"
-      ],
+      "highlights": ["Developed using assembly language"],
       "url": "https://github.com/eyadgad/8086-Based-RPN-Calculator"
     },
     {
       "name": "Power Supply Circuit Design and Implementation",
       "_summary": "Designed and implemented a stable power supply circuit using Proteus and hardware components.",
-      "highlights": [
-        "Improved circuit stability and voltage regulation"
-      ],
+      "highlights": ["Improved circuit stability and voltage regulation"],
       "url": ""
     },
     {
       "name": "IoT-Based Smart Home System with Cloud Interface",
       "_summary": "Designed an IoT-based smart home system integrated with cloud services.",
-      "highlights": [
-        "Implemented using Jetson Nano and cloud APIs"
-      ],
+      "highlights": ["Implemented using Jetson Nano and cloud APIs"],
       "url": "https://github.com/eyadgad/IoT-based-Smart-Home-using-Jetson-Nano-and-Cloud-interface"
     },
     {
       "name": "IoT-Based Smart LED Control System",
       "_summary": "Developed an IoT-enabled LED control system for remote management.",
-      "highlights": [
-        "Implemented efficient remote control using cloud connectivity"
-      ],
+      "highlights": ["Implemented efficient remote control using cloud connectivity"],
       "url": "https://github.com/eyadgad/IoT-Enabled-Smart-LED-Control-System"
     }
   ]
