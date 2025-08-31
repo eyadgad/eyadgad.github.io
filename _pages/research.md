@@ -16,6 +16,7 @@ If you're interested in working together or need support with research, feel fre
 ---
 
 # [📚 Publications](https://scholar.google.com/citations?user=Vmjcp8gAAAAJ&hl=en)
+
 <!--
 Use the search bar below to filter my research by topic, keyword, year, or venue.
 {% include bib_search.liquid %}
