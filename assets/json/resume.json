@@ -23,6 +23,14 @@
   },
   "work": [
     {
+      "name": "NORDIK Institute",
+      "position": "AI Researcher",
+      "url": "https://nordikinstitute.com",
+      "startDate": "2025-05-01",
+      "endDate": "",
+      "summary": "• Collected, cleaned, and prepared a 10‑year Twitter dataset for analysis and LLM fine‑tuning.<br>•  Developed a Financial Stress Index for Canada using NLP and ML techniques (e.g., BERT‑based models).",
+      "highlights": []
+    },{
       "name": "University of Western Ontario",
       "position": "Graduate Research & Teaching Assistant",
       "location": "Ontario, Canada",
