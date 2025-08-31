@@ -25,11 +25,15 @@
     {
       "name": "NORDIK Institute",
       "position": "AI Researcher",
+      "location": "Ontario, Canada",
       "url": "https://nordikinstitute.com",
       "startDate": "2025-05-01",
       "endDate": "",
-      "summary": "• Collected, cleaned, and prepared a 10‑year Twitter dataset for analysis and LLM fine‑tuning.<br>•  Developed a Financial Stress Index for Canada using NLP and ML techniques (e.g., BERT‑based models).",
-      "highlights": []
+      "summary": "Applied NLP and ML to socio-economic Twitter data to build financial stress analytics.",
+      "highlights": [
+        "Collected, cleaned, and prepared a 10-year Twitter dataset for analysis and LLM fine-tuning",
+        "Developed a Financial Stress Index for Canada using BERT-based NLP models"
+      ]
     },{
       "name": "University of Western Ontario",
       "position": "Graduate Research & Teaching Assistant",
@@ -37,8 +41,13 @@
       "url": "https://csd.uwo.ca/",
       "startDate": "2023-09-01",
       "endDate": "2024-12-31",
-      "summary": "• Reviewed challenges of Federated Learning in IoT networks and developed a comparative approach for cybersecurity.<br>• Proposed a novel Deep Learning training optimization, reducing training time by 72% with only a 1.6% accuracy loss.<br>• Served as a Teaching Assistant (TA) for Computer Networks, Python, and Java courses.<br>• As a TA, developed automated testing frameworks in C++, improving grading efficiency by 60% for over 200 students.",
-      "highlights": []
+      "summary": "Research and teaching support in federated learning, optimization, and course assistance.",
+      "highlights": [
+        "Reviewed challenges of federated learning in IoT networks and developed a comparative cybersecurity approach",
+        "Proposed a deep learning training optimization reducing training time 72% with only 1.6% accuracy loss",
+        "TA for Computer Networks, Python, and Java courses",
+        "Built C++ automated testing frameworks improving grading efficiency 60% for 200+ students"
+      ]
     },
     {
       "name": "Centre for Informatics Sciences",
@@ -46,8 +55,12 @@
       "url": "https://cis.nu.edu.eg/",
       "startDate": "2022-02-01",
       "endDate": "2023-05-31",
-      "summary": "• Conducted two research studies on detection of Alzheimer’s Disease (AD) and segmentation of Breast Cancer (BC).<br>• Improved the accuracy of a baseline published study on AD by 10% and published a paper at MEDI.<br>• Utilized a segmentation CNN model for BC ultrasound in FL by accuracy of 96%, and published a paper at MIUA.",
-      "highlights": []
+      "summary": "Medical imaging research in Alzheimer’s detection and breast cancer segmentation.",
+      "highlights": [
+        "Conducted research on Alzheimer’s disease detection and breast cancer ultrasound segmentation",
+        "Improved baseline Alzheimer’s study accuracy by 10% (published at MEDI)",
+        "Applied federated learning with CNN segmentation achieving 96% accuracy (published at MIUA)"
+      ]
     },
     {
       "name": "Delta Care",
@@ -55,8 +68,13 @@
       "url": "",
       "startDate": "2021-06-01",
       "endDate": "2021-09-30",
-      "summary": "• Implemented a temperature controller in C to regulate sperm temperature.<br>• Optimized interprocess communication for Python with C, and C++ with C by reducing response delay by 78%.<br>• Utilized YoloV5 and DeepSort for detecting and tracking sperm movement in motility analysis by accuracy of 91%.<br>• Utilized MaskRCNN for performing instance segmentation on sperms in morphology analysis by accuracy of 87%.",
-      "highlights": []
+      "summary": "Developed embedded and AI components for reproductive health analysis systems.",
+      "highlights": [
+        "Implemented a temperature controller in C to regulate sperm sample temperature",
+        "Optimized interprocess communication (Python↔C, C++↔C) reducing response delay 78%",
+        "Applied YOLOv5 + DeepSORT for sperm motility tracking achieving 91% accuracy",
+        "Used Mask R-CNN for sperm morphology instance segmentation achieving 87% accuracy"
+      ]
     }
   ],
   "_volunteer": [
