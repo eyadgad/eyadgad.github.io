@@ -5,6 +5,9 @@
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
+
+// Import all SCSS modules
+
 @import
   "variables",
   "themes",
