@@ -6,7 +6,7 @@
     "email": "eyad.gad@outlook.com",
     "url": "",
     "_summary": "",
-    "location": {
+    "_location": {
       "address": "",
       "postalCode": "",
       "city": "",
@@ -28,7 +28,7 @@
       "url": "https://nordikinstitute.com",
       "startDate": "2025-05-01",
       "_summary": "Applied NLP and ML to socio-economic Twitter data to build financial stress analytics.",
-      "highlights": [        
+      "highlights": [
         "Built an end-to-end NLP pipeline over a 10-year Twitter corpus (ingestion, cleaning, labeling, evaluation) to produce a Financial Stress Index (FSI) for Canada.",
         "Engineered reproducible data workflows (documented filters, regex rules, deterministic seeds, versioned datasets) to ensure high-quality tweet selection and preprocessing.",
         "Designed hybrid sentiment and feature extraction using lexicons and LLMs (BERT & VADER) to score financial polarity and intensity with quality controls."
@@ -41,7 +41,7 @@
       "startDate": "2023-09-01",
       "endDate": "2024-12-31",
       "_summary": "Research and teaching support in federated learning, optimization, and course assistance.",
-      "highlights":  [
+      "highlights": [
         "Reviewed challenges of federated learning in IoT networks and benchmarked FedAvg/FedProx/SCAFFOLD on CICIoT2023 under statistical heterogeneity.",
         "Proposed a deep learning training optimization (REDUS) reducing training time by ~72% with ~1.6% accuracy trade-off.",
         "Implemented automated testing frameworks for grading programming/networking courses using C++/Python/Docker."
