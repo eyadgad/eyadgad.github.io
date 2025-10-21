@@ -28,9 +28,10 @@
       "url": "https://nordikinstitute.com",
       "startDate": "2025-05-01",
       "_summary": "Applied NLP and ML to socio-economic Twitter data to build financial stress analytics.",
-      "highlights": [
-        "Collected, cleaned, and prepared a 10-year Twitter dataset for analysis and LLM fine-tuning",
-        "Developed a Financial Stress Index for Canada using BERT-based NLP models"
+      "highlights": [        
+        "Built an end-to-end NLP pipeline over a 10-year Twitter corpus (ingestion, cleaning, labeling, evaluation) to produce a Financial Stress Index (FSI) for Canada.",
+        "Engineered reproducible data workflows (documented filters, regex rules, deterministic seeds, versioned datasets) to ensure high-quality tweet selection and preprocessing.",
+        "Designed hybrid sentiment and feature extraction using lexicons and LLMs (BERT & VADER) to score financial polarity and intensity with quality controls."
       ]
     },
     {
@@ -40,11 +41,10 @@
       "startDate": "2023-09-01",
       "endDate": "2024-12-31",
       "_summary": "Research and teaching support in federated learning, optimization, and course assistance.",
-      "highlights": [
-        "Reviewed challenges of federated learning in IoT networks and developed a comparative cybersecurity approach",
-        "Proposed a deep learning training optimization reducing training time 72% with only 1.6% accuracy loss",
-        "TA for Computer Networks, Python, and Java courses",
-        "Built C++ automated testing frameworks improving grading efficiency 60% for 200+ students"
+      "highlights":  [
+        "Reviewed challenges of federated learning in IoT networks and benchmarked FedAvg/FedProx/SCAFFOLD on CICIoT2023 under statistical heterogeneity.",
+        "Proposed a deep learning training optimization (REDUS) reducing training time by ~72% with ~1.6% accuracy trade-off.",
+        "Implemented automated testing frameworks for grading programming/networking courses using C++/Python/Docker."
       ]
     },
     {
@@ -55,9 +55,9 @@
       "endDate": "2023-05-31",
       "_summary": "Medical imaging research in Alzheimer’s detection and breast cancer segmentation.",
       "highlights": [
-        "Conducted research on Alzheimer’s disease detection and breast cancer ultrasound segmentation",
-        "Improved baseline Alzheimer’s study accuracy by 10% (published at MEDI)",
-        "Applied federated learning with CNN segmentation achieving 96% accuracy (published at MIUA)"
+        "Conducted two applied AI studies: Alzheimer’s detection (multimodal features) and breast-cancer ultrasound segmentation (U-Net in a federated setting).",
+        "Addressed class imbalance using SMOTE and improved a published Alzheimer’s baseline by ~10%. Achieved ~96% segmentation accuracy for BC in FL and published at MIUA.",
+        "Documented preprocessing, imbalance handling, and evaluation (Dice/IoU/ROC-AUC) with reproducible training scripts and clear experiment logs."
       ]
     },
     {
@@ -68,10 +68,9 @@
       "endDate": "2021-09-30",
       "_summary": "Developed embedded and AI components for reproductive health analysis systems.",
       "highlights": [
-        "Implemented a temperature controller in C to regulate sperm sample temperature",
-        "Optimized interprocess communication (Python↔C, C++↔C) reducing response delay 78%",
-        "Applied YOLOv5 + DeepSORT for sperm motility tracking achieving 91% accuracy",
-        "Used Mask R-CNN for sperm morphology instance segmentation achieving 87% accuracy"
+        "Implemented a C-based PID temperature controller for precise sample regulation in a lab workflow.",
+        "Optimized Python-C/C++ interprocess communication, reducing response latency by ~70%.",
+        "Built CV pipelines: YOLOv5 + DeepSORT for motility tracking (~91% accuracy) and Mask R-CNN for morphology segmentation (~87% accuracy)."
       ]
     }
   ],
