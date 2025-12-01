@@ -73,7 +73,7 @@ latest_posts:
   align-items: center;
   gap: 0.5rem;
   background: rgba(var(--global-theme-color-rgb), 0.12);
-  border: 2px solid rgba(var(--global-theme-color-rgb), 0.3);
+  border: none;
   padding: 0.7rem 1.8rem;
   border-radius: 50px;
   font-size: 1rem;
@@ -137,7 +137,7 @@ latest_posts:
   margin-bottom: 2.5rem;
   padding: 1.8rem;
   background: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
+  border: none;
   border-radius: 15px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -158,7 +158,6 @@ latest_posts:
 
 .timeline-item:hover {
   transform: translateX(15px);
-  border-color: var(--global-theme-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -198,7 +197,7 @@ latest_posts:
   align-items: center;
   gap: 0.5rem;
   background: rgba(var(--global-theme-color-rgb), 0.08);
-  border: 2px solid rgba(var(--global-theme-color-rgb), 0.25);
+  border: none;
   padding: 0.9rem 1.6rem;
   border-radius: 30px;
   font-weight: 600;
@@ -225,7 +224,6 @@ latest_posts:
 
 .research-tag:hover {
   transform: translateY(-5px) scale(1.05);
-  border-color: var(--global-theme-color);
   background: rgba(var(--global-theme-color-rgb), 0.15);
   box-shadow: 0 8px 20px rgba(var(--global-theme-color-rgb), 0.25);
 }
@@ -239,7 +237,7 @@ latest_posts:
   background: linear-gradient(135deg, 
     rgba(var(--global-theme-color-rgb), 0.05), 
     rgba(var(--global-hover-color-rgb), 0.05));
-  border: 2px dashed rgba(var(--global-theme-color-rgb), 0.3);
+  border: none;
   border-radius: 20px;
   padding: 2.5rem;
   margin: 2rem 0;
@@ -264,14 +262,13 @@ latest_posts:
   gap: 1rem;
   padding: 1.2rem;
   background: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
+  border: none;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .interest-item:hover {
   transform: translateX(8px);
-  border-color: var(--global-theme-color);
   box-shadow: 0 5px 15px rgba(var(--global-theme-color-rgb), 0.15);
 }
 
@@ -304,8 +301,8 @@ latest_posts:
   justify-content: center;
   gap: 0.8rem;
   padding: 1.5rem 2rem;
-  background: var(--global-bg-color);
-  border: 3px solid var(--global-theme-color);
+  background: rgba(var(--global-theme-color-rgb), 0.1);
+  border: none;
   border-radius: 15px;
   text-decoration: none;
   font-weight: 700;
