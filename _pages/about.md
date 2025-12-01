@@ -37,11 +37,46 @@ latest_posts:
   transition: all 0.3s ease;
   max-width: 320px !important;
   border: none !important;
+  outline: none !important;
 }
 
 .profile img:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Oval Dynamic Glow Effect */
+.profile::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 120%;
+  background: radial-gradient(ellipse at center, 
+    rgba(var(--global-theme-color-rgb), 0.4),
+    rgba(var(--global-theme-color-rgb), 0.2),
+    transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -1;
+  animation: pulse-glow 3s ease-in-out infinite;
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 /* Hero Text Styling */
@@ -116,6 +151,7 @@ latest_posts:
   position: relative;
   padding-left: 40px;
   margin: 2rem 0;
+  max-width: 500px;
 }
 
 .timeline::before {
