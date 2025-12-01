@@ -139,10 +139,34 @@ nav_order: 3
 
 <div class="courses-container">
 
+<!-- Teaching Assistantships Section -->
+<div class="degree-section">
+  <div class="degree-header">
+    <h2>Teaching Assistantships</h2>
+    <div class="institution">The University of Western Ontario</div>
+  </div>
+  
+  <div class="courses-grid">
+    <div class="course-card">
+      <div class="course-code">CS3357</div>
+      <div class="course-name">Computer Networks</div>
+    </div>
+    <div class="course-card">
+      <div class="course-code">CS1026</div>
+      <div class="course-name">Computer Science Fundamentals I (Python)</div>
+    </div>
+    <div class="course-card">
+      <div class="course-code">CS1027</div>
+      <div class="course-name">Computer Science Fundamentals II (Java)</div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Masters Section -->
 <div class="degree-section">
   <div class="degree-header">
-    <h2>🎓 Master's in Computer Science</h2>
+    <h2>Master's in Computer Science</h2>
     <div class="institution">The University of Western Ontario</div>
   </div>
   
@@ -169,7 +193,7 @@ nav_order: 3
 <!-- Bachelor's Section -->
 <div class="degree-section">
   <div class="degree-header">
-    <h2>🎓 Bachelor's in Computer Engineering</h2>
+    <h2>Bachelor's in Computer Engineering</h2>
     <div class="institution">Nile University</div>
   </div>
 
@@ -331,43 +355,7 @@ nav_order: 3
 
 </div>
 
-<!-- Teaching Assistantships Section -->
-<div class="degree-section">
-  <div class="degree-header">
-    <h2>👨‍🏫 Teaching Assistantships</h2>
-    <div class="institution">The University of Western Ontario</div>
-  </div>
-  
-  <div class="courses-grid">
-    <div class="course-card">
-      <div class="course-code">CS3357</div>
-      <div class="course-name">Computer Networks</div>
-    </div>
-    <div class="course-card">
-      <div class="course-code">CS1026</div>
-      <div class="course-name">Computer Science Fundamentals I (Python)</div>
-    </div>
-    <div class="course-card">
-      <div class="course-code">CS1027</div>
-      <div class="course-name">Computer Science Fundamentals II (Java)</div>
-    </div>
-  </div>
-</div>
 
-<!-- Statistics -->
-<div class="stats-container">
-  <div class="stat-item">
-    <span class="stat-number">35</span>
-    <div class="stat-label">Total Courses</div>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number">2</span>
-    <div class="stat-label">Degrees</div>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number">3</span>
-    <div class="stat-label">Teaching Courses</div>
-  </div>
-</div>
+
 
 </div>
