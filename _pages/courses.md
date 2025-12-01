@@ -331,6 +331,29 @@ nav_order: 3
 
 </div>
 
+<!-- Teaching Assistantships Section -->
+<div class="degree-section">
+  <div class="degree-header">
+    <h2>👨‍🏫 Teaching Assistantships</h2>
+    <div class="institution">The University of Western Ontario</div>
+  </div>
+  
+  <div class="courses-grid">
+    <div class="course-card">
+      <div class="course-code">CS3357</div>
+      <div class="course-name">Computer Networks</div>
+    </div>
+    <div class="course-card">
+      <div class="course-code">CS1026</div>
+      <div class="course-name">Computer Science Fundamentals I (Python)</div>
+    </div>
+    <div class="course-card">
+      <div class="course-code">CS1027</div>
+      <div class="course-name">Computer Science Fundamentals II (Java)</div>
+    </div>
+  </div>
+</div>
+
 <!-- Statistics -->
 <div class="stats-container">
   <div class="stat-item">
@@ -342,8 +365,8 @@ nav_order: 3
     <div class="stat-label">Degrees</div>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5</span>
-    <div class="stat-label">Specializations</div>
+    <span class="stat-number">3</span>
+    <div class="stat-label">Teaching Courses</div>
   </div>
 </div>
 
