@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: false
+subtitle: <h3>👋 Welcome!</h3>
 
 profile:
   align: right
@@ -25,290 +25,213 @@ latest_posts:
 ---
 
 <style>
-/* Particle Background */
-.particles-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.particle {
-  position: absolute;
-  background: var(--global-theme-color);
-  border-radius: 50%;
-  opacity: 0.1;
-  animation: float-particle 20s infinite ease-in-out;
-}
-
-@keyframes float-particle {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(50px, -50px) scale(1.2); }
-  50% { transform: translate(-30px, -100px) scale(0.8); }
-  75% { transform: translate(-50px, -50px) scale(1.1); }
-}
-
-/* Hero Section */
-.hero-container {
+/* Enhanced Profile Image */
+.profile {
   position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  margin: -2rem -15px 3rem;
-  padding: 3rem 15px;
-  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
-.hero-container::before {
+.profile img {
+  border-radius: 25px !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 320px !important;
+  border: 3px solid rgba(var(--global-theme-color-rgb), 0.3) !important;
+}
+
+.profile img:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 70px rgba(var(--global-theme-color-rgb), 0.4) !important;
+  border-color: var(--global-theme-color) !important;
+}
+
+/* Animated Glow Effect */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(var(--global-theme-color-rgb), 0.3),
+                0 0 40px rgba(var(--global-theme-color-rgb), 0.2),
+                0 0 60px rgba(var(--global-theme-color-rgb), 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(var(--global-theme-color-rgb), 0.5),
+                0 0 60px rgba(var(--global-theme-color-rgb), 0.3),
+                0 0 90px rgba(var(--global-theme-color-rgb), 0.2);
+  }
+}
+
+.profile::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, 
-    rgba(var(--global-theme-color-rgb), 0.03) 0%, 
-    transparent 50%, 
-    rgba(var(--global-hover-color-rgb), 0.03) 100%);
-  z-index: -1;
-}
-
-.split-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* Profile Side with Glassmorphism */
-.profile-side {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-glass {
-  position: relative;
-  backdrop-filter: blur(10px);
-  background: rgba(var(--global-bg-color-rgb), 0.7);
-  border: 1px solid rgba(var(--global-theme-color-rgb), 0.2);
-  border-radius: 30px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.profile-glass::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 30px;
-  padding: 2px;
+  inset: -15px;
   background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.5;
-  animation: rotate-border 8s linear infinite;
-}
-
-@keyframes rotate-border {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.profile-image-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.profile-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-}
-
-/* Morphing blob behind image */
-.blob {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  height: 350px;
-  background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
+  border-radius: 30px;
   opacity: 0.15;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: morph 8s ease-in-out infinite;
+  animation: glow-pulse 4s ease-in-out infinite;
   z-index: -1;
+  filter: blur(20px);
 }
 
-@keyframes morph {
-  0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: translate(-50%, -50%) rotate(0deg); }
-  25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
-  50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; transform: translate(-50%, -50%) rotate(180deg); }
-  75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+/* Hero Text Styling */
+.hero-intro {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+  color: var(--global-text-color);
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(var(--global-theme-color-rgb), 0.03), 
+    rgba(var(--global-hover-color-rgb), 0.03));
+  border-radius: 15px;
+  border-left: 4px solid var(--global-theme-color);
 }
 
-/* Content Side with Typing Effect */
-.content-side {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.typing-container {
-  font-size: 2.5rem;
-  font-weight: 700;
+.hero-intro strong {
   background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
-  min-height: 3.5rem;
+  font-weight: 700;
 }
 
+/* Role Badge */
 .role-badge {
-  display: inline-block;
-  background: rgba(var(--global-theme-color-rgb), 0.1);
-  border: 1px solid rgba(var(--global-theme-color-rgb), 0.3);
-  padding: 0.5rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(var(--global-theme-color-rgb), 0.12);
+  border: 2px solid rgba(var(--global-theme-color-rgb), 0.3);
+  padding: 0.7rem 1.8rem;
   border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--global-theme-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(var(--global-theme-color-rgb), 0.1);
 }
 
-.intro-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.role-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(var(--global-theme-color-rgb), 0.25);
+  background: rgba(var(--global-theme-color-rgb), 0.18);
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 3rem 0 2rem 0;
+  position: relative;
+  display: inline-block;
   color: var(--global-text-color);
-  opacity: 0.9;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--global-theme-color), transparent);
+  border-radius: 4px;
 }
 
 /* Academic Timeline */
-.timeline-section {
-  margin: 4rem 0;
-  position: relative;
-}
-
 .timeline {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 40px;
+  margin: 2rem 0;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, var(--global-theme-color), var(--global-hover-color));
-  border-radius: 3px;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  background: linear-gradient(180deg, 
+    var(--global-theme-color), 
+    var(--global-hover-color));
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(var(--global-theme-color-rgb), 0.3);
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
-  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.8rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 15px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -3.5rem;
-  top: 0;
-  width: 15px;
-  height: 15px;
+  left: -52px;
+  top: 25px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--global-theme-color);
-  border: 3px solid var(--global-bg-color);
-  box-shadow: 0 0 0 3px rgba(var(--global-theme-color-rgb), 0.3);
+  border: 4px solid var(--global-bg-color);
+  box-shadow: 0 0 0 4px rgba(var(--global-theme-color-rgb), 0.2);
   z-index: 2;
 }
 
-.timeline-content {
-  background: rgba(var(--global-code-bg-color-rgb), 0.3);
-  border-left: 3px solid var(--global-theme-color);
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.timeline-content:hover {
-  transform: translateX(10px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+.timeline-item:hover {
+  transform: translateX(15px);
+  border-color: var(--global-theme-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-degree {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--global-theme-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .timeline-school {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
 }
 
 .timeline-supervisor {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   opacity: 0.8;
   font-style: italic;
 }
 
 /* Research Tags */
-.research-section {
-  margin: 3rem 0;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 60%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--global-theme-color), transparent);
-  border-radius: 3px;
-}
-
-.tags-container {
+.research-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 3rem 0;
 }
 
 .research-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: rgba(var(--global-theme-color-rgb), 0.08);
-  border: 2px solid rgba(var(--global-theme-color-rgb), 0.2);
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
+  border: 2px solid rgba(var(--global-theme-color-rgb), 0.25);
+  padding: 0.9rem 1.6rem;
+  border-radius: 30px;
   font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
   position: relative;
   overflow: hidden;
 }
@@ -320,104 +243,104 @@ latest_posts:
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(var(--global-theme-color-rgb), 0.2), transparent);
-  transition: left 0.5s ease;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(var(--global-theme-color-rgb), 0.2), 
+    transparent);
+  transition: left 0.6s ease;
 }
 
 .research-tag:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.05);
   border-color: var(--global-theme-color);
   background: rgba(var(--global-theme-color-rgb), 0.15);
-  box-shadow: 0 5px 15px rgba(var(--global-theme-color-rgb), 0.2);
+  box-shadow: 0 8px 20px rgba(var(--global-theme-color-rgb), 0.25);
 }
 
 .research-tag:hover::before {
   left: 100%;
 }
 
-/* Interests Cards */
-.interests-section {
-  margin: 3rem 0;
+/* Interests Section */
+.interests-box {
+  background: linear-gradient(135deg, 
+    rgba(var(--global-theme-color-rgb), 0.05), 
+    rgba(var(--global-hover-color-rgb), 0.05));
+  border: 2px dashed rgba(var(--global-theme-color-rgb), 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+}
+
+.interests-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: var(--global-text-color);
 }
 
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
 }
 
-.interest-card {
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
   background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.interest-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.interest-card:hover {
-  transform: translateY(-10px) scale(1.02);
+.interest-item:hover {
+  transform: translateX(8px);
   border-color: var(--global-theme-color);
-  box-shadow: 0 15px 40px rgba(var(--global-theme-color-rgb), 0.3);
-}
-
-.interest-card:hover::before {
-  opacity: 0.05;
+  box-shadow: 0 5px 15px rgba(var(--global-theme-color-rgb), 0.15);
 }
 
 .interest-emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
+  font-size: 2.2rem;
+  flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.interest-card:hover .interest-emoji {
-  transform: scale(1.2) rotate(5deg);
+.interest-item:hover .interest-emoji {
+  transform: scale(1.2) rotate(10deg);
 }
 
-.interest-title {
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  position: relative;
-  z-index: 1;
+.interest-text {
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Action Buttons */
 .action-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin: 3rem 0 2rem 0;
 }
 
 .action-btn {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
   padding: 1.5rem 2rem;
+  background: var(--global-bg-color);
+  border: 3px solid var(--global-theme-color);
   border-radius: 15px;
   text-decoration: none;
   font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--global-theme-color);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
-  border: 2px solid var(--global-theme-color);
-  color: var(--global-theme-color);
 }
 
 .action-btn::before {
@@ -435,216 +358,170 @@ latest_posts:
 
 .action-btn:hover {
   color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(var(--global-theme-color-rgb), 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(var(--global-theme-color-rgb), 0.4);
 }
 
 .action-btn:hover::before {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
-.action-btn span {
+.action-btn-emoji {
+  font-size: 1.4rem;
   position: relative;
   z-index: 1;
 }
 
-/* Fun Facts Section */
-.fun-facts {
-  background: rgba(var(--global-code-bg-color-rgb), 0.3);
-  border-radius: 20px;
-  padding: 2.5rem;
-  margin: 3rem 0;
-  border: 1px dashed rgba(var(--global-theme-color-rgb), 0.3);
+.action-btn-text {
+  position: relative;
+  z-index: 1;
 }
 
-.fun-facts h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.fun-facts-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.fun-fact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.fun-fact-emoji {
-  font-size: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .split-layout {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile img {
+    max-width: 250px !important;
+  }
+  
+  .hero-intro {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+  
+  .section-header {
+    font-size: 1.6rem;
+  }
+  
+  .timeline {
+    padding-left: 30px;
+  }
+  
+  .timeline-item::before {
+    left: -42px;
+  }
+  
+  .interests-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  
-  .hero-container {
-    min-height: auto;
-    padding: 2rem 15px;
-  }
-  
-  .profile-side {
-    order: -1;
-  }
-  
-  .profile-image-wrapper {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .blob {
-    width: 300px;
-    height: 300px;
-  }
-  
-  .typing-container {
-    font-size: 2rem;
   }
 }
 
 @media (max-width: 576px) {
-  .profile-image-wrapper {
-    width: 200px;
-    height: 200px;
+  .profile img {
+    max-width: 200px !important;
   }
   
-  .blob {
-    width: 250px;
-    height: 250px;
+  .role-badge {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
   }
   
-  .typing-container {
-    font-size: 1.5rem;
+  .research-tags {
+    gap: 0.8rem;
   }
   
-  .timeline {
-    padding-left: 2rem;
-  }
-  
-  .timeline-item {
-    padding-left: 1rem;
+  .research-tag {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
   }
 }
 </style>
 
-<!-- Particle Background -->
-<div class="particles-container" aria-hidden="true">
-  <div class="particle" style="width: 4px; height: 4px; left: 10%; top: 20%; animation-delay: 0s;"></div>
-  <div class="particle" style="width: 6px; height: 6px; left: 80%; top: 30%; animation-delay: 2s;"></div>
-  <div class="particle" style="width: 3px; height: 3px; left: 60%; top: 60%; animation-delay: 4s;"></div>
-  <div class="particle" style="width: 5px; height: 5px; left: 30%; top: 70%; animation-delay: 6s;"></div>
-  <div class="particle" style="width: 4px; height: 4px; left: 90%; top: 80%; animation-delay: 8s;"></div>
+<div class="role-badge">
+  <span>🔬</span>
+  <span>Researcher & Data Scientist</span>
 </div>
 
-<!-- Hero Section -->
-<div class="hero-container">
-  <div class="split-layout">
-    <div class="profile-side">
-      <div class="profile-glass">
-        <div class="profile-image-wrapper">
-          <div class="blob"></div>
-          <img src="/assets/img/komugiko_cat.gif" alt="Profile Animation">
-        </div>
-      </div>
+<div class="hero-intro">
+  Currently contributing to cutting-edge research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com" target="_blank">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
+</div>
+
+<h2 class="section-header">🎓 Academic Journey</h2>
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-degree">
+      <span>🎓</span>
+      <span>Master's in Computer Science</span>
     </div>
-    
-    <div class="content-side">
-      <div class="typing-container">
-        Hi, I'm Eyad Gad
-      </div>
-      
-      <div class="role-badge">
-        🔬 Researcher & Data Scientist
-      </div>
-      
-      <div class="intro-text">
-        Currently contributing to cutting-edge research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
-      </div>
-    </div>
+    <div class="timeline-school">The University of Western Ontario</div>
+    <div class="timeline-supervisor">Supervised by <a href="https://www.zfadlullah.org/home" target="_blank">Prof. Zubair Fadlullah</a></div>
   </div>
-</div>
-
-<!-- Academic Timeline -->
-<div class="timeline-section">
-  <h2 class="section-title">Academic Journey</h2>
   
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="timeline-degree">Master's in Computer Science</div>
-        <div class="timeline-school">The University of Western Ontario</div>
-        <div class="timeline-supervisor">Supervised by <a href="https://www.zfadlullah.org/home">Prof. Zubair Fadlullah</a></div>
-      </div>
+  <div class="timeline-item">
+    <div class="timeline-degree">
+      <span>🎓</span>
+      <span>Bachelor's in Computer Engineering</span>
     </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="timeline-degree">Bachelor's in Computer Engineering</div>
-        <div class="timeline-school">Nile University</div>
-        <div class="timeline-supervisor">Supervised by <a href="https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh">Prof. Mohamed Darweesh</a></div>
-      </div>
+    <div class="timeline-school">Nile University</div>
+    <div class="timeline-supervisor">Supervised by <a href="https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh" target="_blank">Prof. Mohamed Darweesh</a></div>
+  </div>
+</div>
+
+<h2 class="section-header">🔬 Research Focus</h2>
+
+<div class="research-tags">
+  <div class="research-tag">
+    <span>🤖</span>
+    <span>Artificial Intelligence</span>
+  </div>
+  <div class="research-tag">
+    <span>🌐</span>
+    <span>Internet of Things</span>
+  </div>
+  <div class="research-tag">
+    <span>🏥</span>
+    <span>Medical Imaging</span>
+  </div>
+  <div class="research-tag">
+    <span>📡</span>
+    <span>Smart Networks</span>
+  </div>
+  <div class="research-tag">
+    <span>🔒</span>
+    <span>Cybersecurity</span>
+  </div>
+  <div class="research-tag">
+    <span>📊</span>
+    <span>Data Science</span>
+  </div>
+</div>
+
+<h2 class="section-header">🎯 Beyond Research</h2>
+
+<div class="interests-box">
+  <h3>When I'm not in the lab...</h3>
+  <div class="interests-grid">
+    <div class="interest-item">
+      <span class="interest-emoji">🚴</span>
+      <span class="interest-text">Cycling new routes</span>
+    </div>
+    <div class="interest-item">
+      <span class="interest-emoji">🏃</span>
+      <span class="interest-text">Running & staying active</span>
+    </div>
+    <div class="interest-item">
+      <span class="interest-emoji">🎸</span>
+      <span class="interest-text">Rock & Metal music</span>
+    </div>
+    <div class="interest-item">
+      <span class="interest-emoji">🎼</span>
+      <span class="interest-text">Classical compositions</span>
     </div>
   </div>
 </div>
 
-<!-- Research Focus -->
-<div class="research-section">
-  <h2 class="section-title">Research Focus</h2>
-  
-  <div class="tags-container">
-    <div class="research-tag">🤖 Artificial Intelligence</div>
-    <div class="research-tag">🌐 Internet of Things</div>
-    <div class="research-tag">🏥 Medical Imaging</div>
-    <div class="research-tag">📡 Smart Networks</div>
-    <div class="research-tag">🔒 Cybersecurity</div>
-    <div class="research-tag">📊 Data Science</div>
-  </div>
-</div>
-
-<!-- Interests -->
-<div class="interests-section">
-  <h2 class="section-title">Beyond Research</h2>
-  
-  <div class="fun-facts">
-    <h3>🎯 When I'm not in the lab...</h3>
-    <div class="fun-facts-list">
-      <div class="fun-fact-item">
-        <span class="fun-fact-emoji">🚴</span>
-        <span>Cycling through new routes</span>
-      </div>
-      <div class="fun-fact-item">
-        <span class="fun-fact-emoji">🏃</span>
-        <span>Running & staying active</span>
-      </div>
-      <div class="fun-fact-item">
-        <span class="fun-fact-emoji">🎸</span>
-        <span>Rock & Metal enthusiast</span>
-      </div>
-      <div class="fun-fact-item">
-        <span class="fun-fact-emoji">🎼</span>
-        <span>Classical music lover</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Action Buttons -->
 <div class="action-buttons">
   <a href="/research/" class="action-btn">
-    <span>📚 View Research</span>
+    <span class="action-btn-emoji">📚</span>
+    <span class="action-btn-text">View Research</span>
   </a>
   <a href="/courses/" class="action-btn">
-    <span>🎓 Explore Courses</span>
+    <span class="action-btn-emoji">🎓</span>
+    <span class="action-btn-text">Explore Courses</span>
   </a>
   <a href="/contact/" class="action-btn">
-    <span>💬 Get in Touch</span>
+    <span class="action-btn-emoji">💬</span>
+    <span class="action-btn-text">Get in Touch</span>
   </a>
 </div>
