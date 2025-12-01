@@ -162,7 +162,6 @@ nav_order: 3
   </div>
 </div>
 
-
 <!-- Masters Section -->
 <div class="degree-section">
   <div class="degree-header">
@@ -354,8 +353,5 @@ nav_order: 3
   </div>
 
 </div>
-
-
-
 
 </div>
