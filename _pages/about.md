@@ -32,43 +32,16 @@ latest_posts:
 }
 
 .profile img {
-  border-radius: 25px !important;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3) !important;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 15px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease;
   max-width: 320px !important;
-  border: 3px solid rgba(var(--global-theme-color-rgb), 0.3) !important;
+  border: none !important;
 }
 
 .profile img:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 25px 70px rgba(var(--global-theme-color-rgb), 0.4) !important;
-  border-color: var(--global-theme-color) !important;
-}
-
-/* Animated Glow Effect */
-@keyframes glow-pulse {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(var(--global-theme-color-rgb), 0.3),
-                0 0 40px rgba(var(--global-theme-color-rgb), 0.2),
-                0 0 60px rgba(var(--global-theme-color-rgb), 0.1);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(var(--global-theme-color-rgb), 0.5),
-                0 0 60px rgba(var(--global-theme-color-rgb), 0.3),
-                0 0 90px rgba(var(--global-theme-color-rgb), 0.2);
-  }
-}
-
-.profile::before {
-  content: '';
-  position: absolute;
-  inset: -15px;
-  background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
-  border-radius: 30px;
-  opacity: 0.15;
-  animation: glow-pulse 4s ease-in-out infinite;
-  z-index: -1;
-  filter: blur(20px);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Hero Text Styling */
@@ -428,7 +401,6 @@ latest_posts:
 </style>
 
 <div class="role-badge">
-  <span>🔬</span>
   <span>Researcher & Data Scientist</span>
 </div>
 
@@ -436,12 +408,11 @@ latest_posts:
   Currently contributing to cutting-edge research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com" target="_blank">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
 </div>
 
-<h2 class="section-header">🎓 Academic Journey</h2>
+<h2 class="section-header">Academic Journey</h2>
 
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-degree">
-      <span>🎓</span>
       <span>Master's in Computer Science</span>
     </div>
     <div class="timeline-school">The University of Western Ontario</div>
@@ -450,7 +421,6 @@ latest_posts:
   
   <div class="timeline-item">
     <div class="timeline-degree">
-      <span>🎓</span>
       <span>Bachelor's in Computer Engineering</span>
     </div>
     <div class="timeline-school">Nile University</div>
@@ -458,39 +428,21 @@ latest_posts:
   </div>
 </div>
 
-<h2 class="section-header">🔬 Research Focus</h2>
+<h2 class="section-header">Research Focus</h2>
 
 <div class="research-tags">
-  <div class="research-tag">
-    <span>🤖</span>
-    <span>Artificial Intelligence</span>
-  </div>
-  <div class="research-tag">
-    <span>🌐</span>
-    <span>Internet of Things</span>
-  </div>
-  <div class="research-tag">
-    <span>🏥</span>
-    <span>Medical Imaging</span>
-  </div>
-  <div class="research-tag">
-    <span>📡</span>
-    <span>Smart Networks</span>
-  </div>
-  <div class="research-tag">
-    <span>🔒</span>
-    <span>Cybersecurity</span>
-  </div>
-  <div class="research-tag">
-    <span>📊</span>
-    <span>Data Science</span>
-  </div>
+  <div class="research-tag">Artificial Intelligence</div>
+  <div class="research-tag">Internet of Things</div>
+  <div class="research-tag">Medical Imaging</div>
+  <div class="research-tag">Smart Networks</div>
+  <div class="research-tag">Cybersecurity</div>
+  <div class="research-tag">Data Science</div>
 </div>
 
-<h2 class="section-header">🎯 Beyond Research</h2>
+<h2 class="section-header">Beyond Research</h2>
 
 <div class="interests-box">
-  <h3>When I'm not in the lab...</h3>
+  <h3>Personal Interests</h3>
   <div class="interests-grid">
     <div class="interest-item">
       <span class="interest-emoji">🚴</span>
