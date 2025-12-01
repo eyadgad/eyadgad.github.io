@@ -18,17 +18,10 @@ ninja.data = [{
           },
         },{id: "nav-courses",
           title: "Courses",
-          description: "",
+          description: "Academic coursework and specializations",
           section: "Navigation",
           handler: () => {
             window.location.href = "/courses/";
-          },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
           },
         },{id: "nav-resume",
           title: "Resume",
