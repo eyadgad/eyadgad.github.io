@@ -8,6 +8,7 @@ profile:
   align: right
   image: eyadgad-img.png
   image_circular: true # crops the image to make it circular
+  more_info: false
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: True # includes social icons at the bottom of the page
