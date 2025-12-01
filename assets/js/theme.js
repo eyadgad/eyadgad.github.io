@@ -278,6 +278,4 @@ let initTheme = () => {
       toggleThemeSetting();
     });
   });
-
-
 };
