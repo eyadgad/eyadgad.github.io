@@ -2,6 +2,14 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Watermelon proportions - EDIT THESE VALUES TO CHANGE THE DESIGN
+// Total should equal 100
+:root {
+  --watermelon-red-ratio: 80;      // Red flesh area percentage
+  --watermelon-white-ratio: 12;    // White layer percentage
+  --watermelon-green-ratio: 8;     // Green rind percentage
+}
+
 // Typography
 
 p,
