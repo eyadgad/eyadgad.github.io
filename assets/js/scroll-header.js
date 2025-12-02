@@ -27,22 +27,22 @@
       if (!nameAdded) {
         // Check if navbar brand already exists (shouldn't on home page)
         let navbarBrand = navbar.querySelector(".navbar-brand");
-        
+
         if (!navbarBrand) {
           // Create navbar brand with watermelon name
           navbarBrand = document.createElement("a");
           navbarBrand.className = "navbar-brand title font-weight-lighter watermelon-name-nav";
           navbarBrand.href = "/";
-          
+
           // Clone the watermelon name content from the header
           const originalName = originalHeader.querySelector(".watermelon-name");
           if (originalName) {
             navbarBrand.innerHTML = originalName.innerHTML;
           }
-          
+
           // Add fade-in animation
           navbarBrand.style.animation = "fadeIn 0.4s ease-out";
-          
+
           // Insert at the beginning of navbar container
           navbar.insertBefore(navbarBrand, navbar.firstChild);
           nameAdded = true;
