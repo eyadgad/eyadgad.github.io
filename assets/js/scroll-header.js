@@ -53,7 +53,7 @@
       if (nameAdded) {
         const navbarBrand = navbar.querySelector(".navbar-brand");
         if (navbarBrand) {
-          navbarBrand.style.animation = "fadeOut 0.3s ease-in";
+          navbarBrand.style.animation = "fadeOut 0.5s ease-in";
           setTimeout(() => {
             if (navbarBrand && navbarBrand.parentNode) {
               navbarBrand.parentNode.removeChild(navbarBrand);
