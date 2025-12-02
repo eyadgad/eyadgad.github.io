@@ -32,6 +32,10 @@ strong {
   .letter {
     line-height: 0.9 !important;
     display: inline-block !important;
+
+    &.bold {
+      font-weight: 900 !important;
+    }
   }
 
   .watermelon-a {
@@ -54,6 +58,10 @@ strong {
   .letter {
     line-height: 1 !important;
     display: inline-block !important;
+
+    &.bold {
+      font-weight: 900 !important;
+    }
   }
 
   .watermelon-a {
