@@ -9,7 +9,7 @@
   }
 
   let scrollTimeout;
-  let nameAdded = false;
+  let logoAdded = false;
   const originalHeader = document.querySelector(".post-header");
   const navbar = document.querySelector("#navbar .container");
 
@@ -24,40 +24,36 @@
 
     // If scrolled past the header
     if (scrollPosition > headerTop + headerHeight) {
-      if (!nameAdded) {
-        // Check if navbar brand already exists (shouldn't on home page)
-        let navbarBrand = navbar.querySelector(".navbar-brand");
+      if (!logoAdded) {
+        // Check if scroll logo already exists
+        let navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
 
-        if (!navbarBrand) {
-          // Create navbar brand with watermelon name
-          navbarBrand = document.createElement("a");
-          navbarBrand.className = "navbar-brand title font-weight-lighter watermelon-name-nav";
-          navbarBrand.href = "/";
+        if (!navbarLogo) {
+          navbarLogo = document.createElement("a");
+          navbarLogo.className = "navbar-brand navbar-logo watermelon-scroll-logo";
+          navbarLogo.href = "/";
 
-          // Clone the watermelon name content from the header
-          const originalName = originalHeader.querySelector(".watermelon-name");
-          if (originalName) {
-            navbarBrand.innerHTML = originalName.innerHTML;
-          }
+          const logoIcon = document.createElement("span");
+          logoIcon.className = "navbar-logo-icon";
+          logoIcon.setAttribute("aria-hidden", "true");
+          navbarLogo.appendChild(logoIcon);
 
-          // Add fade-in animation
-          navbarBrand.style.animation = "fadeIn 0.4s ease-out";
+          navbarLogo.style.animation = "fadeIn 0.4s ease-out";
 
-          // Insert at the beginning of navbar container
-          navbar.insertBefore(navbarBrand, navbar.firstChild);
-          nameAdded = true;
+          navbar.insertBefore(navbarLogo, navbar.firstChild);
+          logoAdded = true;
         }
       }
     } else {
-      // Remove the name when scrolling back up
-      if (nameAdded) {
-        const navbarBrand = navbar.querySelector(".navbar-brand");
-        if (navbarBrand) {
-          navbarBrand.style.animation = "fadeOut 0.5s ease-in";
+      // Remove the logo when scrolling back up
+      if (logoAdded) {
+        const navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
+        if (navbarLogo) {
+          navbarLogo.style.animation = "fadeOut 0.5s ease-in";
           setTimeout(() => {
-            if (navbarBrand && navbarBrand.parentNode) {
-              navbarBrand.parentNode.removeChild(navbarBrand);
-              nameAdded = false;
+            if (navbarLogo && navbarLogo.parentNode) {
+              navbarLogo.parentNode.removeChild(navbarLogo);
+              logoAdded = false;
             }
           }, 300);
         }
