@@ -9,11 +9,7 @@
   --watermelon-white-ratio: 12; // White layer percentage
   --watermelon-green-ratio: 8; // Green rind percentage
   --navbar-logo-size: 2.75rem;
-  --navbar-logo-color: #f45252;
-}
-
-html[data-theme="dark"] {
-  --navbar-logo-color: #3b82f6;
+  --navbar-logo-color: var(--global-theme-color);
 }
 
 // Typography
