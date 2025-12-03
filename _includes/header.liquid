@@ -3,15 +3,8 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter watermelon-name-nav" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            <span class="letter">E</span><span class="letter">Y</span><span class="letter">A</span>
-            <svg class="watermelon-d" viewBox="0 0 100 100" role="img" aria-label="D"></svg>
-            <span style="margin: 0 0.3em;"></span><span class="letter bold">G</span><span class="letter bold">A</span>
-            <svg class="watermelon-d" viewBox="0 0 100 100" role="img" aria-label="D"></svg>
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
+        <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/" aria-label="Home">
+          <span class="navbar-logo-icon" aria-hidden="true"></span>
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
