@@ -382,17 +382,33 @@ ul.task-list input[type="checkbox"] {
     display: flex;
     align-items: center;
 
+    .navbar-logo-img,
     .navbar-logo-icon {
       width: var(--navbar-logo-size);
       height: var(--navbar-logo-size);
+    }
+
+    .navbar-logo-img {
       display: block;
+      object-fit: contain;
+    }
+
+    .navbar-logo-icon {
+      display: none;
       background-color: transparent;
       background-image: url("/assets/img/favicon.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+    }
 
-      @supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
+    @supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
+      .navbar-logo-img {
+        display: none;
+      }
+
+      .navbar-logo-icon {
+        display: block;
         background-image: none;
         background-color: var(--navbar-logo-color);
         transition: background-color 0.3s ease;

@@ -38,6 +38,13 @@
           logoIcon.setAttribute("aria-hidden", "true");
           navbarLogo.appendChild(logoIcon);
 
+          const logoImg = document.createElement("img");
+          logoImg.className = "navbar-logo-img";
+          logoImg.src = "/assets/img/favicon.png";
+          logoImg.alt = "Site logo";
+          logoImg.loading = "lazy";
+          navbarLogo.appendChild(logoImg);
+
           navbarLogo.style.animation = "fadeIn 0.4s ease-out";
 
           navbar.insertBefore(navbarLogo, navbar.firstChild);
