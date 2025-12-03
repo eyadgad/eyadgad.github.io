@@ -386,15 +386,16 @@ ul.task-list input[type="checkbox"] {
       width: var(--navbar-logo-size);
       height: var(--navbar-logo-size);
       display: block;
-      background-color: var(--navbar-logo-color);
+      background-color: transparent;
       background-image: url("/assets/img/favicon.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      transition: background-color 0.3s ease;
 
       @supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
         background-image: none;
+        background-color: var(--navbar-logo-color);
+        transition: background-color 0.3s ease;
         -webkit-mask-image: url("/assets/img/favicon.png");
         mask-image: url("/assets/img/favicon.png");
         -webkit-mask-repeat: no-repeat;
