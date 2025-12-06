@@ -409,6 +409,7 @@ ul.task-list input[type="checkbox"] {
       .navbar-logo-icon {
         display: block;
         background-image: none;
+        /* Uses theme color directly for dynamic updates */
         background-color: var(--global-theme-color);
         transition: background-color 0.3s ease;
         -webkit-mask-image: url("/assets/img/favicon.png");
