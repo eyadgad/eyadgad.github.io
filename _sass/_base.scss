@@ -407,7 +407,7 @@ ul.task-list input[type="checkbox"] {
 
     .navbar-logo-icon {
       display: block !important;
-      background-color: var(--global-theme-color) !important;
+      background-color: $purple-color;
       transition: background-color 0.3s ease;
       -webkit-mask-image: url("/assets/img/favicon.png");
       mask-image: url("/assets/img/favicon.png");
@@ -418,6 +418,11 @@ ul.task-list input[type="checkbox"] {
       -webkit-mask-size: contain;
       mask-size: contain;
     }
+  }
+
+  // Dark theme override
+  html[data-theme="dark"] .navbar-logo .navbar-logo-icon {
+    background-color: $blue-color;
   }
 }
 
