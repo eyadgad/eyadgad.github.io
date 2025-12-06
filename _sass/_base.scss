@@ -394,37 +394,46 @@ ul.task-list input[type="checkbox"] {
 
     .navbar-logo-icon {
       display: none;
-      background-color: transparent;
-      background-image: url("/assets/img/favicon.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-
-    @supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
-      .navbar-logo-img {
-        display: none;
-      }
-
-      .navbar-logo-icon {
-        display: block;
-        background-image: none;
-        /* Uses theme color directly for dynamic updates */
-        background-color: var(--global-theme-color);
-        transition: background-color 0.3s ease;
-        -webkit-mask-image: url("/assets/img/favicon.png");
-        mask-image: url("/assets/img/favicon.png");
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        mask-position: center;
-        -webkit-mask-size: contain;
-        mask-size: contain;
-      }
     }
   }
+}
 
-  .navbar-nav .nav-item .nav-link {
+// Navbar logo with mask support (outside navbar-light for proper cascade)
+@supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
+  .navbar-logo {
+    .navbar-logo-img {
+      display: none;
+    }
+
+    .navbar-logo-icon {
+      display: block;
+      background-color: var(--global-theme-color);
+      -webkit-mask-image: url("/assets/img/favicon.png");
+      mask-image: url("/assets/img/favicon.png");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+  }
+}
+
+// Fallback for browsers without mask support
+@supports not ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
+  .navbar-logo {
+    .navbar-logo-img {
+      display: block;
+    }
+
+    .navbar-logo-icon {
+      display: none;
+    }
+  }
+}
+
+.navbar.navbar-light {
     color: var(--global-text-color);
 
     &:hover {
