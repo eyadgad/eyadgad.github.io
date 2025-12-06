@@ -21,7 +21,7 @@
 
       // Generate random horizontal offset (-200px to 200px)
       const randomX = (Math.random() - 0.5) * 400;
-      
+
       // Random direction: 1 for up, -1 for down
       const randomDirection = Math.random() > 0.5 ? 1 : -1;
 
@@ -47,8 +47,12 @@
 
   // Reposition on scroll (since profile might move)
   let scrollTimeout;
-  window.addEventListener("scroll", () => {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(positionFireflies, 50);
-  }, { passive: true });
+  window.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(positionFireflies, 50);
+    },
+    { passive: true }
+  );
 })();

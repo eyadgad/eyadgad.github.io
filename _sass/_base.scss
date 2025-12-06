@@ -9,7 +9,6 @@
   --watermelon-white-ratio: 12; // White layer percentage
   --watermelon-green-ratio: 8; // Green rind percentage
   --navbar-logo-size: 2.75rem;
-  --navbar-logo-color: var(--global-theme-color);
 }
 
 // Typography
@@ -410,7 +409,7 @@ ul.task-list input[type="checkbox"] {
       .navbar-logo-icon {
         display: block;
         background-image: none;
-        background-color: var(--navbar-logo-color);
+        background-color: var(--global-theme-color);
         transition: background-color 0.3s ease;
         -webkit-mask-image: url("/assets/img/favicon.png");
         mask-image: url("/assets/img/favicon.png");
