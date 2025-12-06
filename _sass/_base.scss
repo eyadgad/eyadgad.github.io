@@ -434,6 +434,17 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar.navbar-light {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .navbar-brand {
+    color: var(--global-text-color);
+  }
+
+  .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
 
     &:hover {
