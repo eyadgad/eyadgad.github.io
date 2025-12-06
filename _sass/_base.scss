@@ -402,12 +402,13 @@ ul.task-list input[type="checkbox"] {
 @supports ((-webkit-mask-image: url("")) or (mask-image: url(""))) {
   .navbar-logo {
     .navbar-logo-img {
-      display: none;
+      display: none !important;
     }
 
     .navbar-logo-icon {
-      display: block;
-      background-color: var(--global-theme-color);
+      display: block !important;
+      background-color: var(--global-theme-color) !important;
+      transition: background-color 0.3s ease;
       -webkit-mask-image: url("/assets/img/favicon.png");
       mask-image: url("/assets/img/favicon.png");
       -webkit-mask-repeat: no-repeat;
