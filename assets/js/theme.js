@@ -24,8 +24,32 @@ let setNavbarLogoColor = () => {
   const color = getComputedStyle(document.documentElement).getPropertyValue("--global-theme-color").trim();
   if (!color) return;
 
-  document.querySelectorAll(".navbar-logo-icon").forEach((el) => {
-    el.style.backgroundColor = color;
+  // Resolve mask icon URL relative to current origin
+  const maskUrl = new URL("/assets/img/favicon.png", window.location.origin).toString();
+  const logoSize = getComputedStyle(document.documentElement).getPropertyValue("--navbar-logo-size").trim() || "32px";
+
+  document.querySelectorAll(".navbar-logo").forEach((logo) => {
+    const icon = logo.querySelector(".navbar-logo-icon");
+    const img = logo.querySelector(".navbar-logo-img");
+
+    if (img) {
+      img.style.display = "none";
+    }
+
+    if (icon) {
+      icon.style.display = "block";
+      icon.style.width = logoSize;
+      icon.style.height = logoSize;
+      icon.style.backgroundColor = color;
+      icon.style.webkitMaskImage = `url(${maskUrl})`;
+      icon.style.maskImage = `url(${maskUrl})`;
+      icon.style.webkitMaskRepeat = "no-repeat";
+      icon.style.maskRepeat = "no-repeat";
+      icon.style.webkitMaskPosition = "center";
+      icon.style.maskPosition = "center";
+      icon.style.webkitMaskSize = "contain";
+      icon.style.maskSize = "contain";
+    }
   });
 };
 
