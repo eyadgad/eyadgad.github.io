@@ -1,12 +1,9 @@
-// Scroll Header Animation
+﻿// Scroll Header Animation
 (function () {
   "use strict";
 
-  // Only run on about page (home page with permalink '/')
   const isAboutPage = window.location.pathname === "/" || window.location.pathname === "/index.html";
-  if (!isAboutPage) {
-    return;
-  }
+  if (!isAboutPage) return;
 
   let scrollTimeout;
   let logoAdded = false;
@@ -15,64 +12,63 @@
 
   if (!originalHeader || !navbar) return;
 
-  // Get the original header position
   const headerTop = originalHeader.offsetTop;
   const headerHeight = originalHeader.offsetHeight;
 
+  function createLogo() {
+    let navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
+    if (navbarLogo) return navbarLogo;
+
+    navbarLogo = document.createElement("a");
+    navbarLogo.className = "navbar-brand navbar-logo watermelon-scroll-logo";
+    navbarLogo.href = "/";
+
+    const logoIcon = document.createElement("span");
+    logoIcon.className = "navbar-logo-icon";
+    logoIcon.setAttribute("aria-hidden", "true");
+    navbarLogo.appendChild(logoIcon);
+
+    const logoImg = document.createElement("img");
+    logoImg.className = "navbar-logo-img";
+    logoImg.src = "/assets/img/favicon.png";
+    logoImg.alt = "Site logo";
+    logoImg.loading = "lazy";
+    navbarLogo.appendChild(logoImg);
+
+    navbarLogo.style.animation = "fadeIn 0.4s ease-out";
+
+    navbar.insertBefore(navbarLogo, navbar.firstChild);
+    if (typeof setNavbarLogoColor === "function") {
+      setNavbarLogoColor();
+    }
+
+    return navbarLogo;
+  }
+
+  function removeLogo() {
+    const navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
+    if (!navbarLogo) return;
+    navbarLogo.style.animation = "fadeOut 0.5s ease-in";
+    setTimeout(() => {
+      if (navbarLogo && navbarLogo.parentNode) {
+        navbarLogo.parentNode.removeChild(navbarLogo);
+      }
+    }, 300);
+  }
+
   function handleScroll() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-    // If scrolled past the header
     if (scrollPosition > headerTop + headerHeight) {
       if (!logoAdded) {
-        // Check if scroll logo already exists
-        let navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
-
-        if (!navbarLogo) {
-          navbarLogo = document.createElement("a");
-          navbarLogo.className = "navbar-brand navbar-logo watermelon-scroll-logo";
-          navbarLogo.href = "/";
-
-          const logoIcon = document.createElement("span");
-          logoIcon.className = "navbar-logo-icon";
-          logoIcon.setAttribute("aria-hidden", "true");
-          logoIcon.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--global-theme-color").trim();
-          navbarLogo.appendChild(logoIcon);
-
-          const logoImg = document.createElement("img");
-          logoImg.className = "navbar-logo-img";
-          logoImg.src = "/assets/img/favicon.png";
-          logoImg.alt = "Site logo";
-          logoImg.loading = "lazy";
-          navbarLogo.appendChild(logoImg);
-
-          navbarLogo.style.animation = "fadeIn 0.4s ease-out";
-
-          navbar.insertBefore(navbarLogo, navbar.firstChild);
-          if (typeof setNavbarLogoColor === "function") {
-            setNavbarLogoColor();
-          }
-          logoAdded = true;
-        }
+        createLogo();
+        logoAdded = true;
       }
-    } else {
-      // Remove the logo when scrolling back up
-      if (logoAdded) {
-        const navbarLogo = navbar.querySelector(".navbar-brand.watermelon-scroll-logo");
-        if (navbarLogo) {
-          navbarLogo.style.animation = "fadeOut 0.5s ease-in";
-          setTimeout(() => {
-            if (navbarLogo && navbarLogo.parentNode) {
-              navbarLogo.parentNode.removeChild(navbarLogo);
-              logoAdded = false;
-            }
-          }, 300);
-        }
-      }
+    } else if (logoAdded) {
+      removeLogo();
+      logoAdded = false;
     }
   }
 
-  // Add animations
   const style = document.createElement("style");
   style.textContent = `
     @keyframes fadeIn {
@@ -98,7 +94,6 @@
   `;
   document.head.appendChild(style);
 
-  // Listen to scroll events with throttling
   window.addEventListener(
     "scroll",
     function () {
@@ -110,8 +105,5 @@
     { passive: true }
   );
 
-  // Initial check
-            const logoIcon = document.createElement("span"); 
-            logoIcon.className = "navbar-logo-icon"; 
-            logoIcon.setAttribute("aria-hidden", "true"); 
-            navbarLogo.appendChild(logoIcon); 
+  handleScroll();
+})();
