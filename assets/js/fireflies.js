@@ -25,20 +25,24 @@
     return nodes;
   }
 
+  function getAnchorCenter() {
+    const anchor = document.querySelector(".profile img, .author__avatar img, .avatar img, .about img");
+    if (anchor) {
+      const rect = anchor.getBoundingClientRect();
+      return {
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2,
+      };
+    }
+    return { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  }
+
   function positionFireflies() {
-    const profileImg = document.querySelector(".profile img");
     const fireflies = ensureFireflies();
 
     if (fireflies.length === 0) return;
 
-    let centerX = window.innerWidth / 2;
-    let centerY = window.innerHeight / 2;
-
-    if (profileImg) {
-      const rect = profileImg.getBoundingClientRect();
-      centerX = rect.left + rect.width / 2;
-      centerY = rect.top + rect.height / 2;
-    }
+    const { x: centerX, y: centerY } = getAnchorCenter();
 
     fireflies.forEach((firefly) => {
       firefly.style.left = `${centerX}px`;
@@ -59,10 +63,7 @@
     positionFireflies();
   }
 
-  const profileImg = document.querySelector(".profile img");
-  if (profileImg && !profileImg.complete) {
-    profileImg.addEventListener("load", positionFireflies);
-  }
+  window.addEventListener("load", positionFireflies);
 
   // Reposition on window resize
   let resizeTimeout;
