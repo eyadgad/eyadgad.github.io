@@ -111,5 +111,7 @@
   );
 
   // Initial check
-  handleScroll();
-})();
+            const logoIcon = document.createElement("span"); 
+            logoIcon.className = "navbar-logo-icon"; 
+            logoIcon.setAttribute("aria-hidden", "true"); 
+            navbarLogo.appendChild(logoIcon); 
