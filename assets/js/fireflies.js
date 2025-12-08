@@ -2,40 +2,66 @@
 (function () {
   "use strict";
 
+  const MAX_FIREFLIES = 5;
+
+  function ensureFireflies() {
+    const container = document.querySelector(".fireflies-container");
+    if (!container) return [];
+
+    let nodes = Array.from(container.querySelectorAll(".firefly"));
+
+    if (nodes.length > MAX_FIREFLIES) {
+      nodes.slice(MAX_FIREFLIES).forEach((node) => node.remove());
+      nodes = nodes.slice(0, MAX_FIREFLIES);
+    } else {
+      while (nodes.length < MAX_FIREFLIES) {
+        const node = document.createElement("div");
+        node.className = "firefly";
+        container.appendChild(node);
+        nodes.push(node);
+      }
+    }
+
+    return nodes;
+  }
+
   function positionFireflies() {
     const profileImg = document.querySelector(".profile img");
-    const fireflies = document.querySelectorAll(".firefly");
+    const fireflies = ensureFireflies();
 
-    if (!profileImg || fireflies.length === 0) return;
+    if (fireflies.length === 0) return;
 
-    // Get profile image center position
-    const rect = profileImg.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
+    let centerX = window.innerWidth / 2;
+    let centerY = window.innerHeight / 2;
 
-    // Position fireflies at profile center and set random movement
-    fireflies.forEach((firefly, index) => {
-      // Set starting position to profile center
+    if (profileImg) {
+      const rect = profileImg.getBoundingClientRect();
+      centerX = rect.left + rect.width / 2;
+      centerY = rect.top + rect.height / 2;
+    }
+
+    fireflies.forEach((firefly) => {
       firefly.style.left = `${centerX}px`;
       firefly.style.top = `${centerY}px`;
 
-      // Generate random horizontal offset (-200px to 200px)
-      const randomX = (Math.random() - 0.5) * 400;
-
-      // Random direction: 1 for up, -1 for down
+      const randomX = (Math.random() - 0.5) * 400; // -200 to 200
       const randomDirection = Math.random() > 0.5 ? 1 : -1;
 
-      // Set CSS variables for this specific firefly
       firefly.style.setProperty("--firefly-x-offset", `${randomX}px`);
       firefly.style.setProperty("--firefly-direction", randomDirection);
     });
   }
 
-  // Position on load
+  // Position on load and when profile image finishes loading
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", positionFireflies);
   } else {
     positionFireflies();
+  }
+
+  const profileImg = document.querySelector(".profile img");
+  if (profileImg && !profileImg.complete) {
+    profileImg.addEventListener("load", positionFireflies);
   }
 
   // Reposition on window resize
