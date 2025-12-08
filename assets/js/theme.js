@@ -20,6 +20,15 @@ let setThemeSetting = (themeSetting) => {
 };
 
 // Apply the computed dark or light theme to the website.
+let setNavbarLogoColor = () => {
+  const color = getComputedStyle(document.documentElement).getPropertyValue("--global-theme-color").trim();
+  if (!color) return;
+
+  document.querySelectorAll(".navbar-logo-icon").forEach((el) => {
+    el.style.backgroundColor = color;
+  });
+};
+
 let applyTheme = () => {
   let theme = determineComputedTheme();
 
@@ -54,6 +63,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  setNavbarLogoColor();
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -273,6 +283,9 @@ let initTheme = () => {
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
+
+    // Ensure logo color matches the computed theme once DOM is ready.
+    setNavbarLogoColor();
 
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();

@@ -36,6 +36,7 @@
           const logoIcon = document.createElement("span");
           logoIcon.className = "navbar-logo-icon";
           logoIcon.setAttribute("aria-hidden", "true");
+          logoIcon.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--global-theme-color").trim();
           navbarLogo.appendChild(logoIcon);
 
           const logoImg = document.createElement("img");
@@ -48,6 +49,9 @@
           navbarLogo.style.animation = "fadeIn 0.4s ease-out";
 
           navbar.insertBefore(navbarLogo, navbar.firstChild);
+          if (typeof setNavbarLogoColor === "function") {
+            setNavbarLogoColor();
+          }
           logoAdded = true;
         }
       }
