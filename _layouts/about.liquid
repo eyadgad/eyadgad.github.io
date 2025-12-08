@@ -15,7 +15,7 @@ layout: default
         {% else %}
           {{ site.first_name -}}
           {%- if site.middle_name %} {{ site.middle_name }}{% endif %}
-          {{ site.last_name }}
+          <span class="last-name-accent">{{ site.last_name }}</span>
         {% endif %}
       {% endif %}
     </h1>
