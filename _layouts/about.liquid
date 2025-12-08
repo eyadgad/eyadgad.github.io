@@ -4,12 +4,19 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title watermelon-name">
-      {% if site.title == 'blank' %}
+      {% assign watermelon_on = site.watermelon_name | default: false %}
+      {% if watermelon_on %}
         <span class="letter">E</span><span class="letter">Y</span><span class="letter">A</span><span class="watermelon-d"></span>
         <span style="margin: 0 0.4em;"></span>
         <span class="letter bold">G</span><span class="letter bold">A</span><span class="watermelon-d"></span>
       {% else %}
-        {{ site.title }}
+        {% if site.title != 'blank' %}
+          {{ site.title }}
+        {% else %}
+          {{ site.first_name -}}
+          {%- if site.middle_name %} {{ site.middle_name }}{% endif %}
+          {{ site.last_name }}
+        {% endif %}
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
