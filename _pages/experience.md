@@ -266,10 +266,6 @@ nav_order: 3
     overflow: hidden;
   }
 
-  .exp-modal .modal-header {
-    border-bottom: 1px solid var(--exp-divider);
-  }
-
   .exp-modal .modal-title {
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -412,8 +408,6 @@ nav_order: 3
               {% if summary and summary != "" %}
                 <p class="exp-summary">{{ summary | strip_html | strip_newlines | truncate: 160 }}</p>
               {% endif %}
-
-              <div class="exp-cta">Click to <span>open</span></div>
             </button>
 
             <template id="exp-template-{{ idx }}">
@@ -463,12 +457,8 @@ nav_order: 3
   >
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="expModalBody"></div>
+          
+      <div class="modal-body" id="expModalBody"></div>
       </div>
     </div>
   </div>
