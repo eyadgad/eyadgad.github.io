@@ -135,6 +135,23 @@ nav_order: 6
 
   @media (min-width: 900px) {
     .ct-grid {
+
+  .ct-btn--ghost {
+    background: transparent;
+    color: var(--ct-text);
+    border-color: color-mix(in srgb, var(--ct-text) 18%, transparent);
+  }
+
+  .ct-btn--ghost:hover {
+    background: color-mix(in srgb, var(--ct-text) 6%, transparent);
+  }
+
+  .ct-status {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: var(--ct-muted);
+    min-height: 1.2em;
+  }
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
@@ -155,7 +172,9 @@ nav_order: 6
           <p class="ct-card-desc">{{ email_addr }}</p>
           <div class="ct-actions">
             <a class="ct-btn" href="mailto:{{ email_addr | encode_email }}">Send email</a>
+            <button class="ct-btn ct-btn--ghost" type="button" data-ct-copy="{{ email_addr }}">Copy</button>
           </div>
+          <p class="ct-status" id="ct-copy-status" role="status" aria-live="polite"></p>
         {% else %}
           <p class="ct-card-desc">Email is not configured.</p>
         {% endif %}
@@ -200,3 +219,40 @@ nav_order: 6
 
   </div>
 </div>
+
+<script>
+  (function () {
+    var copyBtn = document.querySelector('[data-ct-copy]');
+    var statusEl = document.getElementById('ct-copy-status');
+    if (!copyBtn || !statusEl) return;
+
+    function setStatus(message) {
+      statusEl.textContent = message;
+    }
+
+    copyBtn.addEventListener('click', async function () {
+      var value = copyBtn.getAttribute('data-ct-copy') || '';
+      if (!value) return;
+
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = value;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.top = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+
+        setStatus('Copied.');
+      } catch (e) {
+        setStatus('Copy failed.');
+      }
+    });
+  })();
+</script>
