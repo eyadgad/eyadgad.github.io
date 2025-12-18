@@ -171,8 +171,8 @@ nav_order: 6
         {% if email_addr and email_addr != "" %}
           <p class="ct-card-desc">{{ email_addr }}</p>
           <div class="ct-actions">
-            <a class="ct-btn" href="mailto:{{ email_addr | encode_email }}">Send email</a>
-            <button class="ct-btn ct-btn--ghost" type="button" data-ct-copy="{{ email_addr }}">Copy</button>
+            <a class="ct-btn" href="mailto:{{ email_addr | encode_email }}" aria-label="Send an email">Send email</a>
+            <button class="ct-btn ct-btn--ghost" type="button" data-ct-copy="{{ email_addr }}" aria-label="Copy email address">Copy</button>
           </div>
           <p class="ct-status" id="ct-copy-status" role="status" aria-live="polite"></p>
         {% else %}
@@ -185,7 +185,7 @@ nav_order: 6
         {% if linkedin_user and linkedin_user != "" %}
           <p class="ct-card-desc">Connect or message me on LinkedIn.</p>
           <div class="ct-actions">
-            <a class="ct-btn" href="https://www.linkedin.com/in/{{ linkedin_user }}" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+            <a class="ct-btn" href="https://www.linkedin.com/in/{{ linkedin_user }}" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">Open LinkedIn</a>
           </div>
         {% else %}
           <p class="ct-card-desc">LinkedIn is not configured.</p>
@@ -197,7 +197,7 @@ nav_order: 6
         {% if github_user and github_user != "" %}
           <p class="ct-card-desc">Browse code, projects, and experiments.</p>
           <div class="ct-actions">
-            <a class="ct-btn" href="https://github.com/{{ github_user }}" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+            <a class="ct-btn" href="https://github.com/{{ github_user }}" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">Open GitHub</a>
           </div>
         {% else %}
           <p class="ct-card-desc">GitHub is not configured.</p>
@@ -209,7 +209,7 @@ nav_order: 6
         {% if scholar_id and scholar_id != "" %}
           <p class="ct-card-desc">See my publications and citations.</p>
           <div class="ct-actions">
-            <a class="ct-btn" href="https://scholar.google.com/citations?user={{ scholar_id }}" target="_blank" rel="noopener noreferrer">Open Scholar</a>
+            <a class="ct-btn" href="https://scholar.google.com/citations?user={{ scholar_id }}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Scholar profile">Open Scholar</a>
           </div>
         {% else %}
           <p class="ct-card-desc">Google Scholar is not configured.</p>
