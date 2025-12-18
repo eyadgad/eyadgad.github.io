@@ -176,7 +176,7 @@ nav_order: 6
     min-height: 1.2em;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 780px) {
     .ct-grid {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
