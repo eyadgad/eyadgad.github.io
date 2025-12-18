@@ -226,13 +226,23 @@ nav_order: 6
     var statusEl = document.getElementById('ct-copy-status');
     if (!copyBtn || !statusEl) return;
 
+    var clearTimer = null;
+
     function setStatus(message) {
       statusEl.textContent = message;
+      if (clearTimer) window.clearTimeout(clearTimer);
+      if (message) {
+        clearTimer = window.setTimeout(function () {
+          statusEl.textContent = '';
+        }, 2200);
+      }
     }
 
     copyBtn.addEventListener('click', async function () {
       var value = copyBtn.getAttribute('data-ct-copy') || '';
       if (!value) return;
+
+      copyBtn.disabled = true;
 
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -252,6 +262,8 @@ nav_order: 6
         setStatus('Copied.');
       } catch (e) {
         setStatus('Copy failed.');
+      } finally {
+        copyBtn.disabled = false;
       }
     });
   })();
