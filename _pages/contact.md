@@ -61,6 +61,16 @@ nav_order: 6
     border-radius: 14px;
     padding: 1.05rem 1.15rem;
     box-shadow: var(--ct-shadow);
+    transition: transform 160ms ease, border-color 160ms ease;
+  }
+
+  .ct-card:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--ct-accent) 35%, var(--ct-divider));
+  }
+
+  .ct-card:focus-within {
+    border-color: var(--ct-accent);
   }
 
   .ct-card-title {
