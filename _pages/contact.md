@@ -82,6 +82,22 @@ nav_order: 6
     line-height: 1.55;
   }
 
+  .ct-meta {
+    margin: 0.35rem 0 0;
+    color: var(--ct-muted);
+    font-size: 0.95rem;
+  }
+
+  .ct-meta a {
+    color: var(--ct-text);
+    text-decoration: none;
+    border-bottom: 1px dashed color-mix(in srgb, var(--ct-text) 35%, transparent);
+  }
+
+  .ct-meta a:hover {
+    border-bottom-color: color-mix(in srgb, var(--ct-accent) 70%, transparent);
+  }
+
   .ct-actions {
     margin-top: 0.85rem;
     display: flex;
@@ -184,6 +200,7 @@ nav_order: 6
         <p class="ct-card-title"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</p>
         {% if linkedin_user and linkedin_user != "" %}
           <p class="ct-card-desc">Connect or message me on LinkedIn.</p>
+          <p class="ct-meta"><a href="https://www.linkedin.com/in/{{ linkedin_user }}" target="_blank" rel="noopener noreferrer">linkedin.com/in/{{ linkedin_user }}</a></p>
           <div class="ct-actions">
             <a class="ct-btn" href="https://www.linkedin.com/in/{{ linkedin_user }}" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">Open LinkedIn</a>
           </div>
@@ -196,6 +213,7 @@ nav_order: 6
         <p class="ct-card-title"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</p>
         {% if github_user and github_user != "" %}
           <p class="ct-card-desc">Browse code, projects, and experiments.</p>
+          <p class="ct-meta"><a href="https://github.com/{{ github_user }}" target="_blank" rel="noopener noreferrer">github.com/{{ github_user }}</a></p>
           <div class="ct-actions">
             <a class="ct-btn" href="https://github.com/{{ github_user }}" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">Open GitHub</a>
           </div>
@@ -208,6 +226,7 @@ nav_order: 6
         <p class="ct-card-title"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</p>
         {% if scholar_id and scholar_id != "" %}
           <p class="ct-card-desc">See my publications and citations.</p>
+          <p class="ct-meta"><a href="https://scholar.google.com/citations?user={{ scholar_id }}" target="_blank" rel="noopener noreferrer">scholar.google.com/citations?user={{ scholar_id }}</a></p>
           <div class="ct-actions">
             <a class="ct-btn" href="https://scholar.google.com/citations?user={{ scholar_id }}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Scholar profile">Open Scholar</a>
           </div>
