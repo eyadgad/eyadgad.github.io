@@ -133,9 +133,6 @@ nav_order: 6
     }
   }
 
-  @media (min-width: 900px) {
-    .ct-grid {
-
   .ct-btn--ghost {
     background: transparent;
     color: var(--ct-text);
@@ -152,6 +149,9 @@ nav_order: 6
     color: var(--ct-muted);
     min-height: 1.2em;
   }
+
+  @media (min-width: 900px) {
+    .ct-grid {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
