@@ -438,10 +438,10 @@ latest_posts:
 </div>
 
 <div class="hero-intro">
-  Currently contributing to cutting-edge research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com" target="_blank">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
+  Currently contributing to research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com" target="_blank">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
 </div>
 
-<h2 class="section-header">Academic Journey</h2>
+<h2 class="section-header">I studied </h2>
 
 <div class="timeline">
   <div class="timeline-item">
