@@ -220,6 +220,12 @@ latest_posts:
   font-style: italic;
 }
 
+.timeline-thesis {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 0.35rem;
+}
+
 /* Research Tags */
 .research-tags {
   display: flex;
@@ -441,7 +447,7 @@ latest_posts:
   Currently contributing to research in <strong>Artificial Intelligence</strong> and <strong>Data Analytics</strong> at <a href="https://nordikinstitute.com" target="_blank">NORDIK Institute</a>. Passionate about transforming complex data into actionable insights and advancing AI applications across diverse domains.
 </div>
 
-<h2 class="section-header">I studied </h2>
+<h2 class="section-header">I've studied</h2>
 
 <div class="timeline">
   <div class="timeline-item">
@@ -450,6 +456,7 @@ latest_posts:
     </div>
     <div class="timeline-school">The University of Western Ontario</div>
     <div class="timeline-supervisor">Supervised by <a href="https://www.zfadlullah.org/home" target="_blank">Prof. Zubair Fadlullah</a></div>
+    <div class="timeline-thesis">Thesis: Combating IoT Attacks In AI-Driven Networks Via Robust And Resource-Efficient Federated Learning</div>
   </div>
   
   <div class="timeline-item">
@@ -458,6 +465,7 @@ latest_posts:
     </div>
     <div class="timeline-school">Nile University</div>
     <div class="timeline-supervisor">Supervised by <a href="https://www.nu.edu.eg/academic-staff/dr-mohamed-s-darweesh" target="_blank">Prof. Mohamed Darweesh</a></div>
+    <div class="timeline-thesis">Thesis: Advancing Brain Tumor Segmentation via Attention-Based 3D U-Net Architecture and Digital Image Processing</div>
   </div>
 </div>
 
